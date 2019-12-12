@@ -1,4 +1,4 @@
-import pandas
+import pandas as pd
 from sodapy import Socrata
 import pymongo
 
@@ -11,9 +11,9 @@ db = clientm.get_database("crime")
 collection = db.get_collection("crime")
 update_count = 0
 for record in df.to_dict('records'):
-      result = collection.replace_one(
-          filter={'arst_date': record['arst_date']},    # locate the document if exists
-          replacement=record,                         # latest document
-          upsert=True)                                # update if exists, insert if not
-      if result.matched_count > 0:
-          update_count += 1
+    result = collection.replace_one(
+        filter = {'arst_date': record['arst_date']},    # locate the document if exists
+        replacement = record,                         # latest document
+        upsert=True)                                # update if exists, insert if not
+      #if result.matched_count > 0:
+          #update_count += 1
