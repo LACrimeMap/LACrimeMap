@@ -5488,3 +5488,16 @@
 2019-12-12 23:47:21,061 [<module>] rows=990, update=988, insert=2
 2019-12-12 23:47:21,065 [<module>] rows=990, update=989, insert=1
 2019-12-12 23:47:21,066 [<module>] rows=990, update=990, insert=0
+2019-12-13 03:24:05,070 [upsert_bpa] rows=990, update=7, insert=983
+2019-12-13 03:24:50,861 [fetch_all_bpa] 990 documents read from the db
+2019-12-13 03:25:24,204 [upsert_bpa] rows=990, update=990, insert=0
+2019-12-13 03:25:25,900 [fetch_all_bpa] 990 documents read from the db
+2019-12-13 03:27:02,008 [upsert_crime] rows=990, update=990, insert=0
+2019-12-13 03:27:03,049 [fetch_all_crime] 990 documents read from the db
+2019-12-13 03:29:43,427 [fetch_all_bpa] 990 documents read from the db
+2019-12-13 03:33:28,308 [fetch_all_crime] 990 documents read from the db
+2019-12-13 03:33:55,636 [fetch_all_crime] 990 documents read from the db
+2019-12-13 03:34:09,711 [fetch_all_crime] 990 documents read from the db
+2019-12-13 03:35:22,848 [fetch_all_crime] 990 documents read from the db
+2019-12-13 03:36:04,271 [fetch_all_crime] 990 documents read from the db
+2019-12-13 03:36:17,539 [fetch_all_crime] 990 documents read from the db
