@@ -1,6 +1,6 @@
 import logging
 import pandas as pd
-from sodapy import Socrata
+#from sodapy import Socrata
 from datetime import datetime
 import pymongo
 import expiringdict

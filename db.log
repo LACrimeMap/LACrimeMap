@@ -5501,3 +5501,11 @@
 2019-12-13 03:35:22,848 [fetch_all_crime] 990 documents read from the db
 2019-12-13 03:36:04,271 [fetch_all_crime] 990 documents read from the db
 2019-12-13 03:36:17,539 [fetch_all_crime] 990 documents read from the db
+2019-12-13 04:33:56,877 [upsert_crime] rows=990, update=990, insert=0
+2019-12-13 04:34:13,681 [upsert_crime] rows=990, update=990, insert=0
+2019-12-13 04:34:30,459 [upsert_crime] rows=990, update=990, insert=0
+2019-12-13 04:34:47,177 [upsert_crime] rows=990, update=990, insert=0
+2019-12-13 04:35:04,248 [upsert_crime] rows=990, update=990, insert=0
+2019-12-13 04:35:21,001 [upsert_crime] rows=990, update=990, insert=0
+2019-12-13 04:35:37,743 [upsert_crime] rows=990, update=990, insert=0
+2019-12-13 04:35:54,585 [upsert_crime] rows=990, update=990, insert=0
