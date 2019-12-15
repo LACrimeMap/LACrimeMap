@@ -7147,3 +7147,6 @@
 2019-12-15 00:36:47,705 [upsert_crime] rows=1000, update=1000, insert=0
 2019-12-15 00:37:04,351 [upsert_crime] rows=1000, update=1000, insert=0
 2019-12-15 00:37:21,277 [upsert_crime] rows=1000, update=1000, insert=0
+2019-12-15 00:37:37,910 [upsert_crime] rows=1000, update=1000, insert=0
+2019-12-15 00:37:54,662 [upsert_crime] rows=1000, update=1000, insert=0
+2019-12-15 01:35:37,728 [upsert_crime] rows=95077, update=0, insert=95077

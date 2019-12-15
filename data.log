@@ -1,2 +1,5 @@
 2019-12-14 18:31:05,821 [_worker] main loop worker ignores exception and continues: 500 Server Error: Server Error.
 	Internal error
+2019-12-15 01:40:59,768 [_worker] main loop worker ignores exception and continues: Exec error resulting in state DEAD :: caused by :: interrupted at shutdown
+2019-12-15 01:41:54,185 [_worker] main loop worker ignores exception and continues: localhost:27017: [Errno 111] Connection refused
+2019-12-15 01:42:48,454 [_worker] main loop worker ignores exception and continues: localhost:27017: [Errno 111] Connection refused
