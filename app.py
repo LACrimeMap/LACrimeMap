@@ -78,8 +78,8 @@ test_x_axis = ['2018-12','2019-1', '2019-2', '2019-3', '2019-4',
           '2019-5', '2019-6']
 start = pd.Timestamp('2018-12-3')
 end = pd.Timestamp('2019-11-19')
-start = pd.Timestamp(datetime(start.year, start.month, 1))
-end = pd.Timestamp(datetime(end.year, end.month, 1))
+start = pd.Timestamp(dt(start.year, start.month, 1))
+end = pd.Timestamp(dt(end.year, end.month, 1))
 month_range_num = round(((end - start).days)/30)
 test_axis = [start + relativedelta(months=+i) for i in range(month_range_num + 1)]
 
@@ -239,12 +239,8 @@ def what_if_handler(startdate, enddate):
     c = df.groupby(['grp_description','month']).count()
     x = df['month'].unique()
     crime = [desc[x[1]] for x in tot]
-
-    print(startdate)
     start = pd.Timestamp(startdate)
     end = pd.Timestamp(enddate)
-    print(type(start))
-    print(start.year, start.month, 1, type(start.year), type(start.year))
     start = pd.Timestamp(dt(start.year, start.month, 1))
     end = pd.Timestamp(dt(end.year, end.month, 1))
     month_range_num = round(((end - start).days)/30)
@@ -253,7 +249,6 @@ def what_if_handler(startdate, enddate):
     fig = go.Figure()
     for i, s in enumerate(crime):
         count_array = c.loc[s]['rpt_id']
-        print(count_array)
         count = [count_array[x] for x in test_axis]
         fig.add_trace(go.Scatter(x=x, y=count, mode='lines', name=s,
                                  line={'width': 2, 'color': COLORS[i]},
