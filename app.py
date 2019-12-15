@@ -140,19 +140,14 @@ def what_if_tool():
         html.Div(children=[dcc.Graph(id='what-if-figure')], className='nine columns'),
 
         html.Div(children=[
-            html.H5("Rescale Power Supply", style={'marginTop': '2rem'}),
+            html.H5("Crime Rates Time Frame", style={'marginTop': '2rem'}),
             html.Div(children=[
-                dcc.Slider(id='wind-scale-slider', min=0, max=4, step=0.1, value=2.5, className='row',
-                           marks={x: str(x) for x in np.arange(0, 4.1, 1)})
-            ], style={'marginTop': '5rem'}),
+                dcc.RangeSlider(id='timerange-slider', min=0, max=13, step=None, value=[0,13], className='row',
+                           marks= {0: '2018-12', 1: '2019-1', 2: '2019-2', 3: '2019-3', 4: '2019-4', 5: '2019-5',6: '2019-6',7: '2019-7',
+                           8: '2019-8',9: '2019-9',10: '2019-10',11: '2019-11', 12:'2019-12'})
+            ], style={'marginTop': '30rem'}),
 
-            html.Div(id='wind-scale-text', style={'marginTop': '1rem'}),
-
-            html.Div(children=[
-                dcc.Slider(id='hydro-scale-slider', min=0, max=4, step=0.1, value=0,
-                           className='row', marks={x: str(x) for x in np.arange(0, 4.1, 1)})
-            ], style={'marginTop': '3rem'}),
-            html.Div(id='hydro-scale-text', style={'marginTop': '1rem'}),
+            html.Div(id='timerange-text', style={'marginTop': '1rem'}),
         ], className='three columns', style={'marginLeft': 5, 'marginTop': '10%'}),
     ], className='row eleven columns')
 
@@ -204,30 +199,21 @@ app.layout = dynamic_layout
 # Defines the dependencies of interactive components
 
 @app.callback(
-    dash.dependencies.Output('wind-scale-text', 'children'),
-    [dash.dependencies.Input('wind-scale-slider', 'value')])
-def update_wind_sacle_text(value):
-    """Changes the display text of the wind slider"""
-    return "Wind Power Scale {:.2f}x".format(value)
-
-
-@app.callback(
-    dash.dependencies.Output('hydro-scale-text', 'children'),
-    [dash.dependencies.Input('hydro-scale-slider', 'value')])
-def update_hydro_sacle_text(value):
-    """Changes the display text of the hydro slider"""
-    return "Hydro Power Scale {:.2f}x".format(value)
+    dash.dependencies.Output('timerange-text', 'children'),
+    [dash.dependencies.Input('timerange-slider', 'value')])
+def update_timerange_text(value):
+    """Changes the display text of the time range slider"""
+    return "Time Frame {:.2f}x".format(value)
 
 
 
 @app.callback(
     dash.dependencies.Output('what-if-figure', 'figure'),
-    [dash.dependencies.Input('wind-scale-slider', 'value'),
-     dash.dependencies.Input('hydro-scale-slider', 'value')])
+    [dash.dependencies.Input('timerange-slider', 'value')])
 def what_if_handler(wind, hydro):
     """Changes the display graph of supply-demand"""
-    df = fetch_all_bpa_as_df(allow_cached=True)
-    x = df['Datetime']
+    df = fetch_all_crime_as_df(allow_cached=True)
+    x = df['Month']
     supply = df['Wind'] * wind + df['Hydro'] * hydro + df['Fossil/Biomass'] + df['Nuclear']
     load = df['Load']
 
