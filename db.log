@@ -7138,3 +7138,12 @@
 2019-12-15 00:33:54,628 [upsert_crime] rows=990, update=990, insert=0
 2019-12-15 00:34:11,216 [upsert_crime] rows=990, update=990, insert=0
 2019-12-15 00:34:27,953 [upsert_crime] rows=990, update=990, insert=0
+2019-12-15 00:34:44,670 [upsert_crime] rows=990, update=990, insert=0
+2019-12-15 00:35:01,317 [upsert_crime] rows=990, update=990, insert=0
+2019-12-15 00:35:17,932 [upsert_crime] rows=990, update=990, insert=0
+2019-12-15 00:35:57,689 [upsert_crime] rows=1000, update=0, insert=1000
+2019-12-15 00:36:14,375 [upsert_crime] rows=1000, update=957, insert=43
+2019-12-15 00:36:31,083 [upsert_crime] rows=1000, update=1000, insert=0
+2019-12-15 00:36:47,705 [upsert_crime] rows=1000, update=1000, insert=0
+2019-12-15 00:37:04,351 [upsert_crime] rows=1000, update=1000, insert=0
+2019-12-15 00:37:21,277 [upsert_crime] rows=1000, update=1000, insert=0
