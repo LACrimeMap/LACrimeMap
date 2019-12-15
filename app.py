@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from datetime import datetime as dt
 import plotly.graph_objects as go
-
+from dateutil.relativedelta import * 
 from database import fetch_all_crime_as_df 
 
 # Definitions of constants. This projects uses extra CSS stylesheet at `./assets/style.css`
@@ -144,7 +144,7 @@ def what_if_tool():
             html.H5("Crime Rates Time Frame", style={'marginTop': '2rem'}),
             html.Div(children=[
                 dcc.DatePickerRange(id='my-date-picker-range', min_date_allowed=dt(2018, 12, 1), max_date_allowed=dt(2019, 12, 1), initial_visible_month=dt(2019, 10, 1),
-                end_date=dt(2019, 8, 1))
+                start_date = dt(2018,12,1), end_date=dt(2019, 8, 1))
             ], style={'marginTop': '5rem', 'width':'40%'}),
 
             html.Div(id='output-container-date-picker-range'),
@@ -233,8 +233,11 @@ def what_if_handler(startdate, enddate):
     x = df['month'].unique()
     crime = [desc[x[1]] for x in tot]
 
+    print(startdate)
     start = pd.Timestamp(startdate)
     end = pd.Timestamp(enddate)
+    print(type(start))
+    print(start.year, start.month, 1, type(start.year), type(start.year))
     start = pd.Timestamp(dt(start.year, start.month, 1))
     end = pd.Timestamp(dt(end.year, end.month, 1))
     month_range_num = round(((end - start).days)/30)
@@ -243,6 +246,7 @@ def what_if_handler(startdate, enddate):
     fig = go.Figure()
     for i, s in enumerate(crime):
         count_array = c.loc[s]['rpt_id']
+        print(count_array)
         count = [count_array[x] for x in test_axis]
         fig.add_trace(go.Scatter(x=x, y=count, mode='lines', name=s,
                                  line={'width': 2, 'color': COLORS[i]},
