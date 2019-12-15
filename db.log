@@ -7154,3 +7154,19 @@
 2019-12-15 02:26:32,089 [fetch_all_crime] 95077 documents read from the db
 2019-12-15 02:26:37,696 [fetch_all_crime] 95077 documents read from the db
 2019-12-15 02:26:44,257 [fetch_all_crime] 95077 documents read from the db
+2019-12-15 02:44:17,128 [upsert_crime] rows=95077, update=95077, insert=0
+2019-12-15 03:15:05,804 [fetch_all_crime] 0 documents read from the db
+2019-12-15 03:15:08,408 [fetch_all_crime] 0 documents read from the db
+2019-12-15 03:15:21,862 [fetch_all_crime] 4090 documents read from the db
+2019-12-15 03:15:23,756 [fetch_all_crime] 4652 documents read from the db
+2019-12-15 03:37:13,483 [fetch_all_crime] 60160 documents read from the db
+2019-12-15 03:46:49,711 [fetch_all_crime] 72074 documents read from the db
+2019-12-15 03:47:47,645 [fetch_all_crime] 73149 documents read from the db
+2019-12-15 03:48:30,395 [fetch_all_crime] 73957 documents read from the db
+2019-12-15 03:48:39,953 [fetch_all_crime] 74086 documents read from the db
+2019-12-15 03:48:45,573 [fetch_all_crime] 74191 documents read from the db
+2019-12-15 03:48:51,284 [fetch_all_crime] 74300 documents read from the db
+2019-12-15 03:51:18,744 [fetch_all_crime] 77021 documents read from the db
+2019-12-15 03:51:26,265 [fetch_all_crime] 77156 documents read from the db
+2019-12-15 03:51:32,289 [fetch_all_crime] 77260 documents read from the db
+2019-12-15 03:51:38,218 [fetch_all_crime] 77374 documents read from the db

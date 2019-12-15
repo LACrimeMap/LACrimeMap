@@ -51,6 +51,8 @@ def fetch_all_crime_as_df(allow_cached=False):
             return None
         df = pd.DataFrame.from_records(data)
         df.drop('_id', axis=1, inplace=True)
+        df['arst_date'] = pd.to_datetime(df['arst_date'])
+        df['month'] = df['arst_date'].apply(lambda x:str(x.year) + '-' + str(x.month))
         return df
 
     if allow_cached:

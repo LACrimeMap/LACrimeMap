@@ -2,6 +2,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import numpy as np
+import pandas as pd
 import plotly.graph_objects as go
 
 from database import fetch_all_crime_as_df 
@@ -11,6 +12,7 @@ COLORS = ['rgb(0,0,0)','rgb(10,10,10)','rgb(15,15,15)','rgb(25,25,25)','rgb(35,3
           'rgb(65,65,65)','rgb(75,75,75)','rgb(85,85,85)','rgb(95,95,95)','rgb(105,105,105)','rgb(115,115,115)', 'rgb(125,67,67)',
           'rgb(135,130,135)', 'rgb(145,145,145)','rgb(155,145,145)','rgb(160,160,160)','rgb(170,170,170)','rgb(180,180,180)','rgb(189,189,189)',
          'rgb(200,195,195)','rgb(210,200,200)','rgb(220,210,210)','rgb(230,220,220)','rgb(240,240,240)','rgb(256,256,256)']
+COLORS = ['rgb(67,67,67)', 'rgb(115,115,115)', 'rgb(49,130,189)', 'rgb(189,189,189)', 'rgb(240,240,240)']
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css', '/assets/style.css']
 
@@ -61,6 +63,18 @@ def description():
         **updates every 5 minutes**. 
         ''', className='eleven columns', style={'paddingLeft': '5%'})], className="row")
 
+desc = ['Driving Under Influence', 'Moving Traffic Violations','Sex (except rape/prst)', 'Rape', 'Aggravated Assault', 'Burglary',
+       'Prostitution/Allied', 'Robbery', 'Narcotic Drug Laws',
+       'Miscellaneous Other Violations', 'Weapon (carry/poss)',
+       'Other Assaults', 'Larceny', 'Disorderly Conduct',
+       'Fraud/Embezzlement',  'Drunkeness',
+       'Liquor Laws', 'Against Family/Child', 'Vehicle Theft',
+        'Homicide', 'Gambling',
+       'Receive Stolen Property', 'Forgery/Counterfeit',
+       'Non-Criminal Detention', 'Pre-Delinquency',
+       'Disturbing the Peace', 'Federal Offenses']
+test_x_axis = ['2018-12','2019-1', '2019-2', '2019-3', '2019-4',
+          '2019-5', '2019-6']
 
 def static_stacked_trend_graph(stack=False):
     """
@@ -71,20 +85,17 @@ def static_stacked_trend_graph(stack=False):
     df = fetch_all_crime_as_df()
     if df is None:
         return go.Figure()
-    x = ['Driving Under Influence', 'Moving Traffic Violations','Sex (except rape/prst)', 'Rape', 'Aggravated Assault', 'Burglary',
-       'Prostitution/Allied', 'Robbery', 'Narcotic Drug Laws',
-       'Miscellaneous Other Violations', 'Weapon (carry/poss)',
-       'Other Assaults', 'Larceny', 'Disorderly Conduct',
-       'Fraud/Embezzlement',  'Drunkeness',
-       'Liquor Laws', 'Against Family/Child', 'Vehicle Theft',
-        'Homicide', 'Gambling',
-       'Receive Stolen Property', 'Forgery/Counterfeit',
-       'Non-Criminal Detention', 'Pre-Delinquency',
-       'Disturbing the Peace', 'Federal Offenses']
-    y = [df[df['grp_description']==c].shape[0] for c in x]
+    tot = [(df[df['grp_description']==c].shape[0], i) for i, c in enumerate(desc)]
+    tot.sort(reverse=True)
+    tot = tot[:5]
+    c = df.groupby(['grp_description','month']).count()
+    x = pd.to_datetime(df['month'].unique())
+    crime = [desc[x[1]] for x in tot]
     fig = go.Figure()
-    for i, s in enumerate(x):
-        fig.add_trace(go.Scatter(x=x, y=y, mode='lines', name=s,
+    for i, s in enumerate(crime):
+        count_array = c.loc[s]['rpt_id']
+        count = [count_array[x] for x in test_x_axis]
+        fig.add_trace(go.Scatter(x=x, y=count, mode='lines', name=s,
                                  line={'width': 2, 'color': COLORS[i]},
                                  stackgroup='stack' if stack else None))
     #fig.add_trace(go.Scatter(x=x, y=df['Load'], mode='lines', name='Load',
