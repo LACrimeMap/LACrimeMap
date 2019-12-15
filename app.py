@@ -3,6 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 import numpy as np
 import pandas as pd
+from datetime import datetime as dt
 import plotly.graph_objects as go
 
 from database import fetch_all_crime_as_df 
@@ -142,13 +143,12 @@ def what_if_tool():
         html.Div(children=[
             html.H5("Crime Rates Time Frame", style={'marginTop': '2rem'}),
             html.Div(children=[
-                dcc.RangeSlider(id='timerange-slider', min=0, max=13, step=None, value=[0,13], className='row',
-                           marks= {0: '2018-12', 1: '2019-1', 2: '2019-2', 3: '2019-3', 4: '2019-4', 5: '2019-5',6: '2019-6',7: '2019-7',
-                           8: '2019-8',9: '2019-9',10: '2019-10',11: '2019-11', 12:'2019-12'})
-            ], style={'marginTop': '30rem'}),
+                dcc.DatePickerRange(id='my-date-picker-range', min_date_allowed=dt(2018, 12, 1), max_date_allowed=dt(2019, 12, 1), initial_visible_month=dt(2019, 10, 1),
+                end_date=dt(2019, 8, 1))
+            ], style={'marginTop': '5rem', 'width':'40%'}),
 
-            html.Div(id='timerange-text', style={'marginTop': '1rem'}),
-        ], className='three columns', style={'marginLeft': 5, 'marginTop': '10%'}),
+            html.Div(id='output-container-date-picker-range'),
+        ], className='three columns', style={'marginLeft': 5, 'marginTop': '15%'}),
     ], className='row eleven columns')
 
 
@@ -199,29 +199,60 @@ app.layout = dynamic_layout
 # Defines the dependencies of interactive components
 
 @app.callback(
-    dash.dependencies.Output('timerange-text', 'children'),
-    [dash.dependencies.Input('timerange-slider', 'value')])
-def update_timerange_text(value):
-    """Changes the display text of the time range slider"""
-    return "Time Frame {:.2f}x".format(value)
-
-
+    dash.dependencies.Output('output-container-date-picker-range', 'children'),
+    [dash.dependencies.Input('my-date-picker-range', 'start_date'),
+     dash.dependencies.Input('my-date-picker-range', 'end_date')])
+def update_output(start_date, end_date):
+    string_prefix = 'You have selected: '
+    if start_date is not None:
+        start_date = dt.strptime(start_date.split(' ')[0], '%Y-%m-%d')
+        start_date_string = start_date.strftime('%B %d, %Y')
+        string_prefix = string_prefix + 'Start Date: ' + start_date_string + ' | '
+    if end_date is not None:
+        end_date = dt.strptime(end_date.split(' ')[0], '%Y-%m-%d')
+        end_date_string = end_date.strftime('%B %d, %Y')
+        string_prefix = string_prefix + 'End Date: ' + end_date_string
+    if len(string_prefix) == len('You have selected: '):
+        return 'Select a date to see it displayed here'
+    else:
+        return string_prefix
 
 @app.callback(
     dash.dependencies.Output('what-if-figure', 'figure'),
-    [dash.dependencies.Input('timerange-slider', 'value')])
-def what_if_handler(wind, hydro):
+    [dash.dependencies.Input('my-date-picker-range', 'start_date'),
+     dash.dependencies.Input('my-date-picker-range', 'end_date')])
+def what_if_handler(startdate, enddate):
     """Changes the display graph of supply-demand"""
     df = fetch_all_crime_as_df(allow_cached=True)
-    x = df['Month']
-    supply = df['Wind'] * wind + df['Hydro'] * hydro + df['Fossil/Biomass'] + df['Nuclear']
-    load = df['Load']
+    if df is None:
+        return go.Figure()
+    tot = [(df[df['grp_description']==c].shape[0], i) for i, c in enumerate(desc)]
+    tot.sort(reverse=True)
+    tot = tot[:5]
+    c = df.groupby(['grp_description','month']).count()
+    x = df['month'].unique()
+    crime = [desc[x[1]] for x in tot]
+
+    start = pd.Timestamp(startdate)
+    end = pd.Timestamp(enddate)
+    start = pd.Timestamp(dt(start.year, start.month, 1))
+    end = pd.Timestamp(dt(end.year, end.month, 1))
+    month_range_num = round(((end - start).days)/30)
+    test_axis = [start + relativedelta(months=+i) for i in range(month_range_num + 1)]
 
     fig = go.Figure()
-    fig.add_trace(go.Scatter(x=x, y=supply, mode='none', name='supply', line={'width': 2, 'color': 'pink'},
-                  fill='tozeroy'))
-    fig.add_trace(go.Scatter(x=x, y=load, mode='none', name='demand', line={'width': 2, 'color': 'orange'},
-                  fill='tonexty'))
+    for i, s in enumerate(crime):
+        count_array = c.loc[s]['rpt_id']
+        count = [count_array[x] for x in test_axis]
+        fig.add_trace(go.Scatter(x=x, y=count, mode='lines', name=s,
+                                 line={'width': 2, 'color': COLORS[i]},
+                                 stackgroup=False))
+
+    #fig = go.Figure()
+    #fig.add_trace(go.Scatter(x=x, y=supply, mode='none', name='supply', line={'width': 2, 'color': 'pink'},
+                  #fill='tozeroy'))
+    #fig.add_trace(go.Scatter(x=x, y=load, mode='none', name='demand', line={'width': 2, 'color': 'orange'},
+                  #fill='tonexty'))
     fig.update_layout(template='plotly_dark', title='Supply/Demand after Power Scaling',
                       plot_bgcolor='#23272c', paper_bgcolor='#23272c', yaxis_title='MW',
                       xaxis_title='Date/Time')
