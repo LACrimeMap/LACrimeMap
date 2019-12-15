@@ -151,7 +151,7 @@ def what_if_tool():
             html.H5("Crime Rates Time Frame", style={'marginTop': '2rem'}),
             html.Div(children=[
                 dcc.DatePickerRange(id='my-date-picker-range', min_date_allowed=dt(2018, 12, 1), max_date_allowed=dt(2019, 12, 1), initial_visible_month=dt(2019, 10, 1),
-                start_date = dt(2018,12,1), end_date=dt(2019, 8, 1))
+                start_date = dt(2018,12,1), end_date=dt(2019, 3, 1))
             ], style={'marginTop': '5rem', 'width':'40%'}),
 
             html.Div(id='output-container-date-picker-range'),
