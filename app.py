@@ -76,6 +76,12 @@ desc = ['Driving Under Influence', 'Moving Traffic Violations','Sex (except rape
        'Disturbing the Peace', 'Federal Offenses']
 test_x_axis = ['2018-12','2019-1', '2019-2', '2019-3', '2019-4',
           '2019-5', '2019-6']
+start = pd.Timestamp('2018-12-3')
+end = pd.Timestamp('2019-11-19')
+start = pd.Timestamp(datetime(start.year, start.month, 1))
+end = pd.Timestamp(datetime(end.year, end.month, 1))
+month_range_num = round(((end - start).days)/30)
+test_axis = [start + relativedelta(months=+i) for i in range(month_range_num + 1)]
 
 def static_stacked_trend_graph(stack=False):
     """
@@ -90,12 +96,12 @@ def static_stacked_trend_graph(stack=False):
     tot.sort(reverse=True)
     tot = tot[:5]
     c = df.groupby(['grp_description','month']).count()
-    x = pd.to_datetime(df['month'].unique())
+    x = df['month'].unique()
     crime = [desc[x[1]] for x in tot]
     fig = go.Figure()
     for i, s in enumerate(crime):
         count_array = c.loc[s]['rpt_id']
-        count = [count_array[x] for x in test_x_axis]
+        count = [count_array[x] for x in test_axis]
         fig.add_trace(go.Scatter(x=x, y=count, mode='lines', name=s,
                                  line={'width': 2, 'color': COLORS[i]},
                                  stackgroup='stack' if stack else None))
@@ -110,8 +116,9 @@ def static_stacked_trend_graph(stack=False):
                       plot_bgcolor='#23272c',
                       paper_bgcolor='#23272c',
                       yaxis_title='Number of Crimes',
-                      xaxis_title='Charge Group')
+                      xaxis_title='Month')
     return fig
+
 
 
 def what_if_description():
