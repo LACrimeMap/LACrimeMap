@@ -7150,3 +7150,7 @@
 2019-12-15 00:37:37,910 [upsert_crime] rows=1000, update=1000, insert=0
 2019-12-15 00:37:54,662 [upsert_crime] rows=1000, update=1000, insert=0
 2019-12-15 01:35:37,728 [upsert_crime] rows=95077, update=0, insert=95077
+2019-12-15 02:26:25,163 [fetch_all_crime] 95077 documents read from the db
+2019-12-15 02:26:32,089 [fetch_all_crime] 95077 documents read from the db
+2019-12-15 02:26:37,696 [fetch_all_crime] 95077 documents read from the db
+2019-12-15 02:26:44,257 [fetch_all_crime] 95077 documents read from the db
