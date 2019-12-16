@@ -58,10 +58,9 @@ def description():
         It can be used to explore load satisfiability under different power contribution with 
         near-real-time energy production & consumption data.
         ### Data Source
-        Energy Planner utilizes near-real-time energy production & consumption data from [BPA 
-        Balancing Authority](https://www.bpa.gov/news/AboutUs/Pages/default.aspx).
-        The [data source](https://transmission.bpa.gov/business/operations/Wind/baltwg.aspx) 
-        **updates every 5 minutes**. 
+        LA Crime Rate analysis uses data from [Los Angeles Open Data](https://data.lacity.org/).
+        The [data source](https://data.lacity.org/A-Safe-City/Arrest-Data-from-2010-to-Present/yru6-6re4) 
+        **updates weekly**. 
         ''', className='eleven columns', style={'paddingLeft': '5%'})], className="row")
 
 desc = ['Driving Under Influence', 'Moving Traffic Violations','Sex (except rape/prst)', 'Rape', 'Aggravated Assault', 'Burglary',
