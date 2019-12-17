@@ -18,7 +18,7 @@ def download_crime(url=CRIME_SOURCE, retries=MAX_DOWNLOAD_ATTEMPT):
     """Returns records from `CRIME_SOURCE` that includes crime and arrestee information.
     """
     client = Socrata(url, None)
-    results = client.get("yru6-6re4",where="arst_date > '2018-11-30T00:00:00.000'", limit = 1000000) # wait to be confirmed
+    results = client.get("yru6-6re4",where="arst_date > '2010-12-30T00:00:00.000'", limit = 1000000) # wait to be confirmed
     return results
 
 def convert_crime(results):
