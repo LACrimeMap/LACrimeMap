@@ -6,3 +6,4 @@
 2019-12-16 02:47:37,651 [_worker] main loop worker ignores exception and continues: Exec error resulting in state DEAD :: caused by :: interrupted at shutdown
 2019-12-16 04:48:44,053 [_worker] main loop worker ignores exception and continues: interrupted at shutdown
 2019-12-17 06:13:54,714 [_worker] main loop worker ignores exception and continues: Exec error resulting in state DEAD :: caused by :: interrupted at shutdown
+2019-12-17 08:13:08,468 [_worker] main loop worker ignores exception and continues: Exec error resulting in state DEAD :: caused by :: interrupted at shutdown
