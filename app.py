@@ -3,6 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 import numpy as np
 import pandas as pd
+import plotly.express as px
 from datetime import datetime as dt
 import plotly.graph_objects as go
 from dateutil.relativedelta import * 
@@ -286,29 +287,37 @@ def crime_handler(startdate, enddate):
     df = fetch_all_crime_as_df(allow_cached=True)
     if df is None:
         return go.Figure()
-    tot = [(df[df['grp_description']==c].shape[0], i) for i, c in enumerate(desc)]
-    tot.sort(reverse=True)
-    tot = tot[:5]
-    c = df.groupby(['grp_description','month']).count()
-    #x = df['month'].unique()
-    crime = [desc[x[1]] for x in tot]
-    start = pd.Timestamp(startdate)
-    end = pd.Timestamp(enddate)
-    start = pd.Timestamp(dt(start.year, start.month, 1))
-    end = pd.Timestamp(dt(end.year, end.month, 1))
-    month_range_num = round(((end - start).days)/30)
-    test_axis = [start + relativedelta(months=+i) for i in range(month_range_num + 1)]
-    title = 'Crime counts of top five categories'
-    fig = go.Figure()
-    for i, s in enumerate(crime):
-        count_array = c.loc[s]['rpt_id']
-        count = [count_array[x] for x in test_axis]
-        fig.add_trace(go.Scatter(x=test_axis, y=count, mode='lines', name=s,
-                                 line={'width': 2, 'color': COLORS[i]},
-                                 stackgroup=False))
-    fig.update_layout(template='plotly_dark', title=title,
-                      plot_bgcolor='#23272c', paper_bgcolor='#23272c', yaxis_title='Number of crimes',
-                      xaxis_title='Date')
+    df.dropna(subset=['grp_description'],inplace=True)
+    violent = ['Homicide','Aggravated Assault','Weapon (carry/poss)']
+    df['crime_type'] = df['grp_description'].apply(lambda x:"violent" if x in violent else "non_violent")
+    df['lat'] = pd.to_numeric(df['location_1'].apply(lambda x:x['latitude']))
+    df['lon'] = pd.to_numeric(df['location_1'].apply(lambda x:x['longitude']))
+    df_map = df[(df['arst_date'] <= enddate)&(df['arst_date'] >= startdate)&(df['crime_type']=='violent')]
+    
+    #start = pd.Timestamp(startdate)
+    #end = pd.Timestamp(enddate)
+    #start = pd.Timestamp(dt(start.year, start.month, 1))
+    #end = pd.Timestamp(dt(end.year, end.month, 1))
+    #month_range_num = round(((end - start).days)/30)
+    #test_axis = [start + relativedelta(months=+i) for i in range(month_range_num + 1)]
+    title = 'Crime map'
+    #fig = go.Figure()
+
+    fig = px.scatter_mapbox(df_map, lat='lat', lon='lon',
+                            color='area_desc', zoom=10, height=500)
+    
+    fig.update_traces(marker=dict(size=12, opacity=0.5))
+    fig.update_layout(mapbox_style="stamen-terrain")
+    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},title=title)
+    # for i, s in enumerate(crime):
+    #     count_array = c.loc[s]['rpt_id']
+    #     count = [count_array[x] for x in test_axis]
+    #     fig.add_trace(go.Scatter(x=test_axis, y=count, mode='lines', name=s,
+    #                              line={'width': 2, 'color': COLORS[i]},
+    #                              stackgroup=False))
+    # fig.update_layout(template='plotly_dark', title=title,
+    #                   plot_bgcolor='#23272c', paper_bgcolor='#23272c', yaxis_title='Number of crimes',
+    #                   xaxis_title='Date')
     return fig  
 
 
