@@ -2931,3 +2931,5 @@
 2019-12-18 14:32:48,989 [upsert_crime] rows=1114, update=1114, insert=0
 2019-12-18 14:33:05,909 [upsert_crime] rows=1114, update=1114, insert=0
 2019-12-18 14:33:22,692 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 14:33:39,723 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 14:33:56,457 [upsert_crime] rows=1114, update=1114, insert=0
