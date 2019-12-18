@@ -8,17 +8,16 @@ from sodapy import Socrata
 from datetime import datetime
 
 CRIME_SOURCE = "data.lacity.org"
-MAX_DOWNLOAD_ATTEMPT = 5
 DOWNLOAD_PERIOD = 15         # second
 logger = logging.Logger(__name__)
 utils.setup_logger(logger, 'data.log')
 
 
-def download_crime(url=CRIME_SOURCE, retries=MAX_DOWNLOAD_ATTEMPT):
+def download_crime(url=CRIME_SOURCE, start_date = '2019-12-08T00:00:00.000'):
     """Returns records from `CRIME_SOURCE` that includes crime and arrestee information.
     """
     client = Socrata(url, None)
-    results = client.get("yru6-6re4",where="arst_date > '2010-12-30T00:00:00.000'", limit = 1000000) # wait to be confirmed
+    results = client.get("yru6-6re4",where=f"arst_date >= {start_date}", limit = 10000) # wait to be confirmed
     return results
 
 def convert_crime(results):
