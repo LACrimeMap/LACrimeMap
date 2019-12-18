@@ -8,3 +8,79 @@
 2019-12-17 06:13:54,714 [_worker] main loop worker ignores exception and continues: Exec error resulting in state DEAD :: caused by :: interrupted at shutdown
 2019-12-17 08:13:08,468 [_worker] main loop worker ignores exception and continues: Exec error resulting in state DEAD :: caused by :: interrupted at shutdown
 2019-12-18 01:07:03,117 [_worker] main loop worker ignores exception and continues: all indexes on collection dropped
+2019-12-18 01:09:55,284 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:10:10,730 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:10:26,178 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:10:41,602 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:10:57,104 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:11:12,535 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:11:27,981 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:11:43,432 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:11:58,874 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:12:14,296 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:12:29,801 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:12:45,206 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:13:00,639 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:13:16,052 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:13:31,457 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:13:46,854 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:14:02,304 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:14:17,654 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:14:33,048 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:14:48,459 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:15:03,871 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:15:19,258 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:15:34,706 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:15:50,044 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:16:05,477 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:16:20,897 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:16:36,318 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:16:51,711 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:17:07,118 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:17:22,525 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:17:37,930 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:17:53,348 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:18:08,974 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:18:24,383 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:18:39,744 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:18:55,167 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:19:10,590 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 01:19:25,990 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
+	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
