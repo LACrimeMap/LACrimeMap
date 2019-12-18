@@ -96,7 +96,7 @@ def static_stacked_trend_graph0(stack=False):
     for i, s in enumerate(crime):
         count_array = c.loc[s]['rpt_id']
         count = [count_array[x] for x in x_axis]
-        fig.add_trace(go.Scatter(x=x, y=count, mode='lines', name=s,
+        fig.add_trace(go.Scatter(x=x_axis, y=count, mode='lines', name=s,
                                  line={'width': 2, 'color': COLORS[i]},
                                  stackgroup='stack' if stack else None))
     #fig.add_trace(go.Scatter(x=x, y=df['Load'], mode='lines', name='Load',
@@ -154,7 +154,7 @@ def static_stacked_trend_graph(stack=False):
                       plot_bgcolor='#23272c',
                       paper_bgcolor='#23272c',
                       yaxis_title='Number of Crimes',
-                      xaxis_title='Month')
+                      xaxis_title='Date')
     return fig
 
 
@@ -188,7 +188,7 @@ def what_if_tool():
         html.Div(children=[
             html.H5("Crime Rates Time Frame", style={'marginTop': '2rem'}),
             html.Div(children=[
-                dcc.DatePickerRange(id='my-date-picker-range', min_date_allowed=dt(2018, 12, 1), max_date_allowed=dt(2019, 12, 1), initial_visible_month=dt(2019, 10, 1),
+                dcc.DatePickerRange(id='my-date-picker-range', min_date_allowed=dt(2018, 1, 1), max_date_allowed=dt(2019, 12, 13), initial_visible_month=dt(2019, 10, 1),
                 start_date = dt(2018,12,1), end_date=dt(2019, 8, 1))
             ], style={'marginTop': '5rem', 'width':'40%'}),
 
@@ -230,7 +230,7 @@ def dynamic_layout():
         html.Hr(),
         description(),
         # dcc.Graph(id='trend-graph', figure=static_stacked_trend_graph(stack=False)),
-        dcc.Graph(id='stacked-trend-graph', figure=static_stacked_trend_graph(stack=True)),
+        dcc.Graph(id='stacked-trend-graph', figure=static_stacked_trend_graph(stack=False)),
         what_if_description(),
         what_if_tool(),
         architecture_summary(),
@@ -243,24 +243,24 @@ app.layout = dynamic_layout
 
 # Defines the dependencies of interactive components
 
-@app.callback(
-    dash.dependencies.Output('output-container-date-picker-range', 'children'),
-    [dash.dependencies.Input('my-date-picker-range', 'start_date'),
-     dash.dependencies.Input('my-date-picker-range', 'end_date')])
-def update_output(start_date, end_date):
-    string_prefix = 'You have selected: '
-    if start_date is not None:
-        start_date = dt.strptime(start_date.split(' ')[0], '%Y-%m-%d')
-        start_date_string = start_date.strftime('%B %d, %Y')
-        string_prefix = string_prefix + 'Start Date: ' + start_date_string + ' | '
-    if end_date is not None:
-        end_date = dt.strptime(end_date.split(' ')[0], '%Y-%m-%d')
-        end_date_string = end_date.strftime('%B %d, %Y')
-        string_prefix = string_prefix + 'End Date: ' + end_date_string
-    if len(string_prefix) == len('You have selected: '):
-        return 'Select a date to see it displayed here'
-    else:
-        return string_prefix
+# @app.callback(
+#     dash.dependencies.Output('output-container-date-picker-range', 'children'),
+#     [dash.dependencies.Input('my-date-picker-range', 'start_date'),
+#      dash.dependencies.Input('my-date-picker-range', 'end_date')])
+# def update_output(start_date, end_date):
+#     string_prefix = 'You have selected: '
+#     if start_date is not None:
+#         start_date = dt.strptime(start_date.split(' ')[0], '%Y-%m-%d')
+#         start_date_string = start_date.strftime('%B %d, %Y')
+#         string_prefix = string_prefix + 'Start Date: ' + start_date_string + ' | '
+#     if end_date is not None:
+#         end_date = dt.strptime(end_date.split(' ')[0], '%Y-%m-%d')
+#         end_date_string = end_date.strftime('%B %d, %Y')
+#         string_prefix = string_prefix + 'End Date: ' + end_date_string
+#     if len(string_prefix) == len('You have selected: '):
+#         return 'Select a date to see it displayed here'
+#     else:
+#         return string_prefix
 
 @app.callback(
     dash.dependencies.Output('what-if-figure', 'figure'),
@@ -283,7 +283,7 @@ def what_if_handler(startdate, enddate):
     end = pd.Timestamp(dt(end.year, end.month, 1))
     month_range_num = round(((end - start).days)/30)
     test_axis = [start + relativedelta(months=+i) for i in range(month_range_num + 1)]
-
+    title = 'Crime counts of top five categories'
     fig = go.Figure()
     for i, s in enumerate(crime):
         count_array = c.loc[s]['rpt_id']
@@ -297,11 +297,10 @@ def what_if_handler(startdate, enddate):
                   #fill='tozeroy'))
     #fig.add_trace(go.Scatter(x=x, y=load, mode='none', name='demand', line={'width': 2, 'color': 'orange'},
                   #fill='tonexty'))
-    fig.update_layout(template='plotly_dark', title='Supply/Demand after Power Scaling',
-                      plot_bgcolor='#23272c', paper_bgcolor='#23272c', yaxis_title='MW',
-                      xaxis_title='Date/Time')
-    return fig
-
+    fig.update_layout(template='plotly_dark', title=title,
+                      plot_bgcolor='#23272c', paper_bgcolor='#23272c', yaxis_title='Number of crimes',
+                      xaxis_title='Date')
+    return fig  
 
 if __name__ == '__main__':
     app.run_server(debug=True, port=1050, host='0.0.0.0')
