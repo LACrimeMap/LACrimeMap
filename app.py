@@ -41,54 +41,23 @@ def description():
     """
     return html.Div(children=[dcc.Markdown('''
         # Crime rates in Los Angeles
+        # Crime rates in Los Angeles 
+        Predicting criminal activity is a fundamental challenge to police 
+        across the country. Attempting to adjust policy to crime rates haphazardly 
+        can lead to innumerable issues, including over-policing of disadvantaged 
+        neighborhoods, failure to protect citizens, or a loss of trust between 
+        citizens and the police force. When using algorithmic methods to asses 
+        crime rates, clear and well-understood data is critical to avoiding the 
+        pitfalls that, when they occur in an institution as significant as criminal 
+        justice, can cause significant harms.
+        To this end, **LA Crime Map is an exploratory tool that can be used to 
+        visualize trends in LA Crime data.** The data can be explored using the 
+        quantity of crime, the type of crime, specific areas, and geographic data.
         ### Data Source
         LA Crime Rate analysis uses data from [Los Angeles Open Data](https://data.lacity.org/).
         The [data source](https://data.lacity.org/A-Safe-City/Arrest-Data-from-2010-to-Present/yru6-6re4) 
         **updates weekly**. 
         ''', className='eleven columns', style={'paddingLeft': '5%'})], className="row")
-
-def static_stacked_trend_graph(stack=False):
-    """
-    Returns scatter line plot of all power sources and power load.
-    If `stack` is `True`, the 4 power sources are stacked together to show the overall power
-    production.
-    """
-    df = fetch_all_crime_as_df(allow_cached=True)
-    if df is None:
-        return go.Figure()
-    tot = [(df[df['grp_description']==c].shape[0], i) for i, c in enumerate(desc)]
-    tot.sort(reverse=True)
-    tot = tot[:5]
-    c = df.groupby(['grp_description','month']).count()
-    #x = df['month'].unique()
-    start = pd.Timestamp('2019-7-1')
-    end = pd.Timestamp('2019-11-19')
-    start = pd.Timestamp(dt(start.year, start.month, 1))
-    end = pd.Timestamp(dt(end.year, end.month, 1))
-    month_range_num = round(((end - start).days)/30)
-    x_axis = [start + relativedelta(months=+i) for i in range(month_range_num + 1)]
-    #x = df['month_string'].unique()
-    crime = [desc[x[1]] for x in tot]
-    fig = go.Figure()
-    for i, s in enumerate(crime):
-        count_array = c.loc[s]['rpt_id']
-        count = [count_array[x] for x in x_axis]
-        fig.add_trace(go.Scatter(x=x_axis, y=count, mode='lines', name=s,
-                                 line={'width': 2, 'color': COLORS[i]},
-                                 stackgroup='stack' if stack else None))
-    #fig.add_trace(go.Scatter(x=x, y=df['Load'], mode='lines', name='Load',
-                             #line={'width': 2, 'color': 'orange'}))
-    title = 'Crime incidences of each charge group'
-    if stack:
-        title += ' [Stacked]'
-
-    fig.update_layout(template='plotly_dark',
-                      title=title,
-                      plot_bgcolor='#23272c',
-                      paper_bgcolor='#23272c',
-                      yaxis_title='Number of Crimes',
-                      xaxis_title='Date')
-    return fig
 
 
 
