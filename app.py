@@ -170,7 +170,7 @@ def crime_map_tool():
             html.H5("Crime Rates Time Frame", style={'marginTop': '2rem'}),
             html.Div(children=[
                 dcc.DatePickerRange(id='crime-date-picker-range', min_date_allowed=dt(2018, 1, 1), max_date_allowed=dt(2019, 12, 13), initial_visible_month=dt(2019, 10, 1),
-                start_date = dt(2018,12,1), end_date=dt(2019, 8, 1))
+                start_date = dt(2019,11,1), end_date=dt(2019, 11, 30))
             ], style={'marginTop': '5rem', 'width':'20%'}),
         ], className='three columns', style={'marginLeft': 5, 'marginTop': '15%'}),
     ], className='row eleven columns')
@@ -213,6 +213,7 @@ def dynamic_layout():
         what_if_description(),
         what_if_tool(),
         crime_map_description(),
+        crime_map_tool(),
         architecture_summary(),
     ], className='row', id='content')
 
