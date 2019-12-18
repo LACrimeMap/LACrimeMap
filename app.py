@@ -9,10 +9,6 @@ from dateutil.relativedelta import *
 from database import fetch_all_crime_as_df 
 
 # Definitions of constants. This projects uses extra CSS stylesheet at `./assets/style.css`
-COLORS = ['rgb(0,0,0)','rgb(10,10,10)','rgb(15,15,15)','rgb(25,25,25)','rgb(35,35,35)', 'rgb(45,45,45)','rgb(55,55,55)',
-          'rgb(65,65,65)','rgb(75,75,75)','rgb(85,85,85)','rgb(95,95,95)','rgb(105,105,105)','rgb(115,115,115)', 'rgb(125,67,67)',
-          'rgb(135,130,135)', 'rgb(145,145,145)','rgb(155,145,145)','rgb(160,160,160)','rgb(170,170,170)','rgb(180,180,180)','rgb(189,189,189)',
-         'rgb(200,195,195)','rgb(210,200,200)','rgb(220,210,210)','rgb(230,220,220)','rgb(240,240,240)','rgb(256,256,256)']
 COLORS = ['rgb(67,67,67)', 'rgb(115,115,115)', 'rgb(49,130,189)', 'rgb(189,189,189)', 'rgb(240,240,240)']
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css', '/assets/style.css']
@@ -20,10 +16,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css', '/assets/s
 # Define the dash app first
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
-
 # Define component functions
-
-
 def page_header():
     """
     Returns the page header as a dash `html.Div`
@@ -73,46 +66,6 @@ desc = ['Driving Under Influence', 'Moving Traffic Violations','Sex (except rape
        'Receive Stolen Property', 'Forgery/Counterfeit',
        'Non-Criminal Detention', 'Pre-Delinquency',
        'Disturbing the Peace', 'Federal Offenses']
-test_x_axis = ['2018-12','2019-1', '2019-2', '2019-3', '2019-4',
-          '2019-5', '2019-6']
-
-def static_stacked_trend_graph0(stack=False):
-    """
-    Returns scatter line plot of all power sources and power load.
-    If `stack` is `True`, the 4 power sources are stacked together to show the overall power
-    production.
-    """
-    df = fetch_all_crime_as_df()
-    if df is None:
-        return go.Figure()
-    tot = [(df[df['grp_description']==c].shape[0], i) for i, c in enumerate(desc)]
-    tot.sort(reverse=True)
-    tot = tot[:5]
-    c = df.groupby(['grp_description','month_string']).count()
-    #x = df['month']
-    x_axis = ['2018-12','2019-1','2019-2','2019-3','2019-4','2019-5', '2019-6', '2019-7', '2019-8', '2019-9', '2019-10', '2019-11']
-    crime = [desc[x[1]] for x in tot]
-    fig = go.Figure()
-    for i, s in enumerate(crime):
-        count_array = c.loc[s]['rpt_id']
-        count = [count_array[x] for x in x_axis]
-        fig.add_trace(go.Scatter(x=x_axis, y=count, mode='lines', name=s,
-                                 line={'width': 2, 'color': COLORS[i]},
-                                 stackgroup='stack' if stack else None))
-    #fig.add_trace(go.Scatter(x=x, y=df['Load'], mode='lines', name='Load',
-                             #line={'width': 2, 'color': 'orange'}))
-    title = 'Crime incidences of each charge group'
-    if stack:
-        title += ' [Stacked]'
-
-    fig.update_layout(template='plotly_dark',
-                      title=title,
-                      plot_bgcolor='#23272c',
-                      paper_bgcolor='#23272c',
-                      yaxis_title='Number of Crimes',
-                      xaxis_title='Month')
-    return fig
-
 
 def static_stacked_trend_graph(stack=False):
     """
@@ -191,8 +144,34 @@ def what_if_tool():
                 dcc.DatePickerRange(id='my-date-picker-range', min_date_allowed=dt(2018, 1, 1), max_date_allowed=dt(2019, 12, 13), initial_visible_month=dt(2019, 10, 1),
                 start_date = dt(2018,12,1), end_date=dt(2019, 8, 1))
             ], style={'marginTop': '5rem', 'width':'40%'}),
+        ], className='three columns', style={'marginLeft': 5, 'marginTop': '15%'}),
+    ], className='row eleven columns')
 
-            html.Div(id='output-container-date-picker-range'),
+def crime_map_description():
+    """
+    Returns the description of crime map.
+    """
+    return html.Div(children=[
+        dcc.Markdown('''
+        # " What If "
+        crime heatmap
+        ''', className='eleven columns', style={'paddingLeft': '5%'})
+    ], className="row")
+
+def crime_map_tool():
+    """
+    Returns the What-If tool as a dash `html.Div`. The view is a 8:3 division between
+    demand-supply plot and rescale sliders.
+    """
+    return html.Div(children=[
+        html.Div(children=[dcc.Graph(id='what-if-crime')], className='ten columns'),
+
+        html.Div(children=[
+            html.H5("Crime Rates Time Frame", style={'marginTop': '2rem'}),
+            html.Div(children=[
+                dcc.DatePickerRange(id='crime-date-picker-range', min_date_allowed=dt(2018, 1, 1), max_date_allowed=dt(2019, 12, 13), initial_visible_month=dt(2019, 10, 1),
+                start_date = dt(2018,12,1), end_date=dt(2019, 8, 1))
+            ], style={'marginTop': '5rem', 'width':'20%'}),
         ], className='three columns', style={'marginLeft': 5, 'marginTop': '15%'}),
     ], className='row eleven columns')
 
@@ -233,6 +212,7 @@ def dynamic_layout():
         dcc.Graph(id='stacked-trend-graph', figure=static_stacked_trend_graph(stack=False)),
         what_if_description(),
         what_if_tool(),
+        crime_map_description(),
         architecture_summary(),
     ], className='row', id='content')
 
@@ -267,7 +247,7 @@ app.layout = dynamic_layout
     [dash.dependencies.Input('my-date-picker-range', 'start_date'),
      dash.dependencies.Input('my-date-picker-range', 'end_date')])
 def what_if_handler(startdate, enddate):
-    """Changes the display graph of supply-demand"""
+    """Changes the display graph of crime rates"""
     df = fetch_all_crime_as_df(allow_cached=True)
     if df is None:
         return go.Figure()
@@ -291,16 +271,46 @@ def what_if_handler(startdate, enddate):
         fig.add_trace(go.Scatter(x=test_axis, y=count, mode='lines', name=s,
                                  line={'width': 2, 'color': COLORS[i]},
                                  stackgroup=False))
-
-    #fig = go.Figure()
-    #fig.add_trace(go.Scatter(x=x, y=supply, mode='none', name='supply', line={'width': 2, 'color': 'pink'},
-                  #fill='tozeroy'))
-    #fig.add_trace(go.Scatter(x=x, y=load, mode='none', name='demand', line={'width': 2, 'color': 'orange'},
-                  #fill='tonexty'))
     fig.update_layout(template='plotly_dark', title=title,
                       plot_bgcolor='#23272c', paper_bgcolor='#23272c', yaxis_title='Number of crimes',
                       xaxis_title='Date')
     return fig  
+
+@app.callback(
+    dash.dependencies.Output('what-if-crime', 'figure'),
+    [dash.dependencies.Input('crime-date-picker-range', 'start_date'),
+     dash.dependencies.Input('crime-date-picker-range', 'end_date')])
+def crime_handler(startdate, enddate):
+    """Changes the display graph of crime rates"""
+    df = fetch_all_crime_as_df(allow_cached=True)
+    if df is None:
+        return go.Figure()
+    tot = [(df[df['grp_description']==c].shape[0], i) for i, c in enumerate(desc)]
+    tot.sort(reverse=True)
+    tot = tot[:5]
+    c = df.groupby(['grp_description','month']).count()
+    #x = df['month'].unique()
+    crime = [desc[x[1]] for x in tot]
+    start = pd.Timestamp(startdate)
+    end = pd.Timestamp(enddate)
+    start = pd.Timestamp(dt(start.year, start.month, 1))
+    end = pd.Timestamp(dt(end.year, end.month, 1))
+    month_range_num = round(((end - start).days)/30)
+    test_axis = [start + relativedelta(months=+i) for i in range(month_range_num + 1)]
+    title = 'Crime counts of top five categories'
+    fig = go.Figure()
+    for i, s in enumerate(crime):
+        count_array = c.loc[s]['rpt_id']
+        count = [count_array[x] for x in test_axis]
+        fig.add_trace(go.Scatter(x=test_axis, y=count, mode='lines', name=s,
+                                 line={'width': 2, 'color': COLORS[i]},
+                                 stackgroup=False))
+    fig.update_layout(template='plotly_dark', title=title,
+                      plot_bgcolor='#23272c', paper_bgcolor='#23272c', yaxis_title='Number of crimes',
+                      xaxis_title='Date')
+    return fig  
+
+
 
 if __name__ == '__main__':
     app.run_server(debug=True, port=1050, host='0.0.0.0')
