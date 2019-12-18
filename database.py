@@ -9,7 +9,7 @@ import utils
 client = pymongo.MongoClient()
 logger = logging.Logger(__name__)
 utils.setup_logger(logger, 'db.log')
-RESULT_CACHE_EXPIRATION = 15 
+RESULT_CACHE_EXPIRATION = 2000
 
 def upsert_crime(df):
     """
@@ -52,8 +52,8 @@ def fetch_all_crime_as_df(allow_cached=False):
         df = pd.DataFrame.from_records(data)
         df.drop('_id', axis=1, inplace=True)
         df['arst_date'] = pd.to_datetime(df['arst_date'])
-        df['month'] = df['arst_date'].apply(lambda x:str(x.year) + '-' + str(x.month))
-        df['month'] = pd.to_datetime(df['month'])
+        df['month_string'] = df['arst_date'].apply(lambda x:str(x.year) + '-' + str(x.month))
+        df['month'] = pd.to_datetime(df['month_string'])
         return df
 
     if allow_cached:

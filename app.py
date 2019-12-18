@@ -75,14 +75,8 @@ desc = ['Driving Under Influence', 'Moving Traffic Violations','Sex (except rape
        'Disturbing the Peace', 'Federal Offenses']
 test_x_axis = ['2018-12','2019-1', '2019-2', '2019-3', '2019-4',
           '2019-5', '2019-6']
-start = pd.Timestamp('2018-12-3')
-end = pd.Timestamp('2019-11-19')
-start = pd.Timestamp(dt(start.year, start.month, 1))
-end = pd.Timestamp(dt(end.year, end.month, 1))
-month_range_num = round(((end - start).days)/30)
-test_axis = [start + relativedelta(months=+i) for i in range(month_range_num + 1)]
 
-def static_stacked_trend_graph(stack=False):
+def static_stacked_trend_graph0(stack=False):
     """
     Returns scatter line plot of all power sources and power load.
     If `stack` is `True`, the 4 power sources are stacked together to show the overall power
@@ -94,14 +88,59 @@ def static_stacked_trend_graph(stack=False):
     tot = [(df[df['grp_description']==c].shape[0], i) for i, c in enumerate(desc)]
     tot.sort(reverse=True)
     tot = tot[:5]
-    c = df.groupby(['grp_description','month']).count()
-    x = df['month'].unique()
+    c = df.groupby(['grp_description','month_string']).count()
+    #x = df['month']
+    x_axis = ['2018-12','2019-1','2019-2','2019-3','2019-4','2019-5', '2019-6', '2019-7', '2019-8', '2019-9', '2019-10', '2019-11']
     crime = [desc[x[1]] for x in tot]
     fig = go.Figure()
     for i, s in enumerate(crime):
         count_array = c.loc[s]['rpt_id']
-        count = [count_array[x] for x in test_axis]
+        count = [count_array[x] for x in x_axis]
         fig.add_trace(go.Scatter(x=x, y=count, mode='lines', name=s,
+                                 line={'width': 2, 'color': COLORS[i]},
+                                 stackgroup='stack' if stack else None))
+    #fig.add_trace(go.Scatter(x=x, y=df['Load'], mode='lines', name='Load',
+                             #line={'width': 2, 'color': 'orange'}))
+    title = 'Crime incidences of each charge group'
+    if stack:
+        title += ' [Stacked]'
+
+    fig.update_layout(template='plotly_dark',
+                      title=title,
+                      plot_bgcolor='#23272c',
+                      paper_bgcolor='#23272c',
+                      yaxis_title='Number of Crimes',
+                      xaxis_title='Month')
+    return fig
+
+
+def static_stacked_trend_graph(stack=False):
+    """
+    Returns scatter line plot of all power sources and power load.
+    If `stack` is `True`, the 4 power sources are stacked together to show the overall power
+    production.
+    """
+    df = fetch_all_crime_as_df(allow_cached=True)
+    if df is None:
+        return go.Figure()
+    tot = [(df[df['grp_description']==c].shape[0], i) for i, c in enumerate(desc)]
+    tot.sort(reverse=True)
+    tot = tot[:5]
+    c = df.groupby(['grp_description','month']).count()
+    #x = df['month'].unique()
+    start = pd.Timestamp('2019-7-1')
+    end = pd.Timestamp('2019-11-19')
+    start = pd.Timestamp(dt(start.year, start.month, 1))
+    end = pd.Timestamp(dt(end.year, end.month, 1))
+    month_range_num = round(((end - start).days)/30)
+    x_axis = [start + relativedelta(months=+i) for i in range(month_range_num + 1)]
+    #x = df['month_string'].unique()
+    crime = [desc[x[1]] for x in tot]
+    fig = go.Figure()
+    for i, s in enumerate(crime):
+        count_array = c.loc[s]['rpt_id']
+        count = [count_array[x] for x in x_axis]
+        fig.add_trace(go.Scatter(x=x_axis, y=count, mode='lines', name=s,
                                  line={'width': 2, 'color': COLORS[i]},
                                  stackgroup='stack' if stack else None))
     #fig.add_trace(go.Scatter(x=x, y=df['Load'], mode='lines', name='Load',
@@ -236,7 +275,7 @@ def what_if_handler(startdate, enddate):
     tot.sort(reverse=True)
     tot = tot[:5]
     c = df.groupby(['grp_description','month']).count()
-    x = df['month'].unique()
+    #x = df['month'].unique()
     crime = [desc[x[1]] for x in tot]
     start = pd.Timestamp(startdate)
     end = pd.Timestamp(enddate)
@@ -249,7 +288,7 @@ def what_if_handler(startdate, enddate):
     for i, s in enumerate(crime):
         count_array = c.loc[s]['rpt_id']
         count = [count_array[x] for x in test_axis]
-        fig.add_trace(go.Scatter(x=x, y=count, mode='lines', name=s,
+        fig.add_trace(go.Scatter(x=test_axis, y=count, mode='lines', name=s,
                                  line={'width': 2, 'color': COLORS[i]},
                                  stackgroup=False))
 
