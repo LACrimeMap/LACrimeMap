@@ -94,3 +94,4 @@
 2019-12-18 07:58:14,964 [_worker] main loop worker ignores exception and continues: 500 Server Error: Server Error.
 	Internal error
 >>>>>>> c2b2607aa9a1866d6c8d22881469d66e095e9c4f
+2019-12-18 14:35:37,438 [_worker] main loop worker ignores exception and continues: all indexes on collection dropped

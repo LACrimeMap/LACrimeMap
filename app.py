@@ -40,7 +40,6 @@ def description():
     Returns overall project description in markdown
     """
     return html.Div(children=[dcc.Markdown('''
-        # Crime rates in Los Angeles
         # Crime rates in Los Angeles 
         Predicting criminal activity is a fundamental challenge to police 
         across the country. Attempting to adjust policy to crime rates haphazardly 
@@ -53,28 +52,31 @@ def description():
         To this end, **LA Crime Map is an exploratory tool that can be used to 
         visualize trends in LA Crime data.** The data can be explored using the 
         quantity of crime, the type of crime, specific areas, and geographic data.
-        ### Data Source
+        ## Data Source
         LA Crime Rate analysis uses data from [Los Angeles Open Data](https://data.lacity.org/).
         The [data source](https://data.lacity.org/A-Safe-City/Arrest-Data-from-2010-to-Present/yru6-6re4) 
         **updates weekly**. 
-        ''', className='eleven columns', style={'paddingLeft': '5%'})], className="row")
+        Prepared By:      
+        Weihao Zhou, 
+        Kaiwen Yang, 
+        Xu Han, 
+        Laura McCallion .   
+        [About Page](https://docs.google.com/document/d/1zEYKkCu6WQKGqgfMlu1XxCjlVlqwyZc5B_qrF5GeYf8/edit?usp=sharing)
+        ''', className='eleven columns', style={'paddingLeft': '5%'})
+    ], className="row")
 
 
 
 def what_if_description():
     """
-    Returns description of "What-If" - the interactive component
+    Returns description of top five crime incidences in different timeframe - the interactive component
     """
     return html.Div(children=[
         dcc.Markdown('''
-        # " What If "
-        So far, BPA has been relying on hydro power to balance the demand and supply of power. 
-        Could our city survive an outage of hydro power and use up-scaled wind power as an
-        alternative? Find below **what would happen with 2.5x wind power and no hydro power at 
-        all**.   
-        Feel free to try out more combinations with the sliders. For the clarity of demo code,
-        only two sliders are included here. A fully-functioning What-If tool should support
-        playing with other interesting aspects of the problem (e.g. instability of load).
+        ## Explore crime rates trend in the last two years
+        Does a particular month/season/year see more crimes than others? Use this tool to explore how the nunber of top five crimes 
+        changes from month to month. The total count of crime for each month will be displayed. Day of the month is not considered. The return
+        result will include the start month and end month. 
         ''', className='eleven columns', style={'paddingLeft': '5%'})
     ], className="row")
 
@@ -166,8 +168,7 @@ def dynamic_layout():
         page_header(),
         html.Hr(),
         description(),
-        # dcc.Graph(id='trend-graph', figure=static_stacked_trend_graph(stack=False)),
-        dcc.Graph(id='stacked-trend-graph', figure=static_stacked_trend_graph(stack=False)),
+        #dcc.Graph(id='stacked-trend-graph', figure=static_stacked_trend_graph(stack=False)),
         what_if_description(),
         what_if_tool(),
         crime_map_description(),
@@ -178,28 +179,6 @@ def dynamic_layout():
 
 # set layout to a function which updates upon reloading
 app.layout = dynamic_layout
-
-
-# Defines the dependencies of interactive components
-
-# @app.callback(
-#     dash.dependencies.Output('output-container-date-picker-range', 'children'),
-#     [dash.dependencies.Input('my-date-picker-range', 'start_date'),
-#      dash.dependencies.Input('my-date-picker-range', 'end_date')])
-# def update_output(start_date, end_date):
-#     string_prefix = 'You have selected: '
-#     if start_date is not None:
-#         start_date = dt.strptime(start_date.split(' ')[0], '%Y-%m-%d')
-#         start_date_string = start_date.strftime('%B %d, %Y')
-#         string_prefix = string_prefix + 'Start Date: ' + start_date_string + ' | '
-#     if end_date is not None:
-#         end_date = dt.strptime(end_date.split(' ')[0], '%Y-%m-%d')
-#         end_date_string = end_date.strftime('%B %d, %Y')
-#         string_prefix = string_prefix + 'End Date: ' + end_date_string
-#     if len(string_prefix) == len('You have selected: '):
-#         return 'Select a date to see it displayed here'
-#     else:
-#         return string_prefix
 
 @app.callback(
     dash.dependencies.Output('what-if-figure', 'figure'),
@@ -228,7 +207,7 @@ def what_if_handler(startdate, enddate):
                                  stackgroup=False))
     fig.update_layout(template='plotly_dark', title=title,
                       plot_bgcolor='#23272c', paper_bgcolor='#23272c', yaxis_title='Number of crimes',
-                      xaxis_title='Date')
+                      xaxis_title='Month')
     return fig  
 
 @app.callback(
