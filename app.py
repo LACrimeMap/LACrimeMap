@@ -79,9 +79,9 @@ test_x_axis = ['2018-12','2019-1', '2019-2', '2019-3', '2019-4',
 
 def static_stacked_trend_graph0(stack=False):
     """
-    Returns scatter line plot of all power sources and power load.
-    If `stack` is `True`, the 4 power sources are stacked together to show the overall power
-    production.
+    Returns scatter line plot of types of crime and rates
+    If `stack` is `True`, the categories are stacked together to show 
+    the overall crime rate
     """
     df = fetch_all_crime_as_df()
     if df is None:

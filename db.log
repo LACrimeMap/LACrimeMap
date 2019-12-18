@@ -1776,3 +1776,6 @@
 2019-12-18 14:09:11,898 [fetch_all_crime] 79660 documents read from the db
 2019-12-18 14:09:25,236 [fetch_all_crime] 79837 documents read from the db
 2019-12-18 14:09:40,279 [fetch_all_crime] 80022 documents read from the db
+2019-12-18 14:10:38,508 [fetch_all_crime] 80933 documents read from the db
+2019-12-18 14:10:52,188 [fetch_all_crime] 81147 documents read from the db
+2019-12-18 14:11:14,399 [fetch_all_crime] 81459 documents read from the db
