@@ -88,3 +88,5 @@
 	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
 2019-12-18 01:19:56,778 [_worker] main loop worker ignores exception and continues: 400 Client Error: Bad Request.
 	Could not parse SoQL query "select * where arst_date >= 2019-12-08T00:00:00.000 limit 10000" at line 1 character 39
+2019-12-18 07:58:14,964 [_worker] main loop worker ignores exception and continues: 500 Server Error: Server Error.
+	Internal error
