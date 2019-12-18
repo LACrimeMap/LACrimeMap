@@ -41,32 +41,11 @@ def description():
     """
     return html.Div(children=[dcc.Markdown('''
         # Crime rates in Los Angeles
-        As of today, 138 cities in the U.S. have formally announced 100% renewable energy goals or
-        targets, while others are actively considering similar goals. Despite ambition and progress,
-        conversion towards renewable energy remains challenging.
-        Wind and solar power are becoming more cost effective, but they will always be unreliable
-        and intermittent sources of energy. They follow weather patterns with potential for lots of
-        variability. Solar power starts to die away right at sunset, when one of the two daily peaks
-        arrives (see orange curve for load).
-        **Energy Planner is a "What-If" tool to assist making power conversion plans.**
-        It can be used to explore load satisfiability under different power contribution with 
-        near-real-time energy production & consumption data.
         ### Data Source
         LA Crime Rate analysis uses data from [Los Angeles Open Data](https://data.lacity.org/).
         The [data source](https://data.lacity.org/A-Safe-City/Arrest-Data-from-2010-to-Present/yru6-6re4) 
         **updates weekly**. 
         ''', className='eleven columns', style={'paddingLeft': '5%'})], className="row")
-
-desc = ['Driving Under Influence', 'Moving Traffic Violations','Sex (except rape/prst)', 'Rape', 'Aggravated Assault', 'Burglary',
-       'Prostitution/Allied', 'Robbery', 'Narcotic Drug Laws',
-       'Miscellaneous Other Violations', 'Weapon (carry/poss)',
-       'Other Assaults', 'Larceny', 'Disorderly Conduct',
-       'Fraud/Embezzlement',  'Drunkeness',
-       'Liquor Laws', 'Against Family/Child', 'Vehicle Theft',
-        'Homicide', 'Gambling',
-       'Receive Stolen Property', 'Forgery/Counterfeit',
-       'Non-Criminal Detention', 'Pre-Delinquency',
-       'Disturbing the Peace', 'Federal Offenses']
 
 def static_stacked_trend_graph(stack=False):
     """
@@ -173,6 +152,15 @@ def crime_map_tool():
                 dcc.DatePickerRange(id='crime-date-picker-range', min_date_allowed=dt(2018, 1, 1), max_date_allowed=dt(2019, 12, 13), initial_visible_month=dt(2019, 10, 1),
                 start_date = dt(2019,11,1), end_date=dt(2019, 11, 30))
             ], style={'marginTop': '5rem', 'width':'20%'}),
+            html.Div(children=[
+                dcc.Dropdown(
+                id='crime-dropdown',
+                options=[
+                        {'label': 'Non-Violent Crimes', 'value': 'non_violent'},
+                        {'label': 'Violent Crimes', 'value': 'violent'}],
+                        value='non_violent')
+            ], style={'marginTop': '5rem', 'width':'20%'}),
+            html.Div(id='dd-output-container'),
         ], className='three columns', style={'marginLeft': 5, 'marginTop': '15%'}),
     ], className='row eleven columns')
 
@@ -253,12 +241,8 @@ def what_if_handler(startdate, enddate):
     df = fetch_all_crime_as_df(allow_cached=True)
     if df is None:
         return go.Figure()
-    tot = [(df[df['grp_description']==c].shape[0], i) for i, c in enumerate(desc)]
-    tot.sort(reverse=True)
-    tot = tot[:5]
     c = df.groupby(['grp_description','month']).count()
-    #x = df['month'].unique()
-    crime = [desc[x[1]] for x in tot]
+    crime = ['Miscellaneous Other Violations', 'Narcotic Drug Laws', 'Aggravated Assault', 'Driving Under Influence', 'Other Assaults']
     start = pd.Timestamp(startdate)
     end = pd.Timestamp(enddate)
     start = pd.Timestamp(dt(start.year, start.month, 1))
@@ -281,8 +265,9 @@ def what_if_handler(startdate, enddate):
 @app.callback(
     dash.dependencies.Output('what-if-crime', 'figure'),
     [dash.dependencies.Input('crime-date-picker-range', 'start_date'),
-     dash.dependencies.Input('crime-date-picker-range', 'end_date')])
-def crime_handler(startdate, enddate):
+     dash.dependencies.Input('crime-date-picker-range', 'end_date'),
+     dash.dependencies.Input('crime-dropdown', 'value'),])
+def crime_handler(startdate, enddate, crimetype):
     """Changes the display graph of crime rates"""
     df = fetch_all_crime_as_df(allow_cached=True)
     if df is None:
@@ -292,33 +277,20 @@ def crime_handler(startdate, enddate):
     df['crime_type'] = df['grp_description'].apply(lambda x:"violent" if x in violent else "non_violent")
     df['lat'] = pd.to_numeric(df['location_1'].apply(lambda x:x['latitude']))
     df['lon'] = pd.to_numeric(df['location_1'].apply(lambda x:x['longitude']))
-    df_map = df[(df['arst_date'] <= enddate)&(df['arst_date'] >= startdate)&(df['crime_type']=='violent')]
-    
-    #start = pd.Timestamp(startdate)
-    #end = pd.Timestamp(enddate)
-    #start = pd.Timestamp(dt(start.year, start.month, 1))
-    #end = pd.Timestamp(dt(end.year, end.month, 1))
-    #month_range_num = round(((end - start).days)/30)
-    #test_axis = [start + relativedelta(months=+i) for i in range(month_range_num + 1)]
+    df_map = df[(df['arst_date'] <= enddate)&(df['arst_date'] >= startdate)&(df['crime_type']==crimetype)]
     title = 'Crime map'
-    #fig = go.Figure()
-
-    fig = px.scatter_mapbox(df_map, lat='lat', lon='lon',
-                            color='area_desc', zoom=10, height=500)
+    fig = px.scatter_mapbox(df_map, lat='lat', lon='lon', zoom=10, height=500, color='area_desc')
     
     fig.update_traces(marker=dict(size=12, opacity=0.5))
     fig.update_layout(mapbox_style="stamen-terrain")
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},title=title)
-    # for i, s in enumerate(crime):
-    #     count_array = c.loc[s]['rpt_id']
-    #     count = [count_array[x] for x in test_axis]
-    #     fig.add_trace(go.Scatter(x=test_axis, y=count, mode='lines', name=s,
-    #                              line={'width': 2, 'color': COLORS[i]},
-    #                              stackgroup=False))
-    # fig.update_layout(template='plotly_dark', title=title,
-    #                   plot_bgcolor='#23272c', paper_bgcolor='#23272c', yaxis_title='Number of crimes',
-    #                   xaxis_title='Date')
     return fig  
+
+@app.callback(
+    dash.dependencies.Output('dd-output-container', 'children'),
+    [dash.dependencies.Input('crime-dropdown', 'value')])
+def update_output(value):
+    return 'You have selected "{}"'.format(value)
 
 
 
