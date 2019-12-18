@@ -1771,3 +1771,8 @@
 2019-12-18 11:42:31,905 [upsert_crime] rows=1114, update=1114, insert=0
 2019-12-18 11:42:49,842 [upsert_crime] rows=1114, update=1114, insert=0
 2019-12-18 11:43:07,209 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 13:40:25,236 [fetch_all_crime] 48226 documents read from the db
+2019-12-18 14:08:58,851 [fetch_all_crime] 79485 documents read from the db
+2019-12-18 14:09:11,898 [fetch_all_crime] 79660 documents read from the db
+2019-12-18 14:09:25,236 [fetch_all_crime] 79837 documents read from the db
+2019-12-18 14:09:40,279 [fetch_all_crime] 80022 documents read from the db

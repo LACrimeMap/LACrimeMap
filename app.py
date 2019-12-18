@@ -46,17 +46,18 @@ def description():
     Returns overall project description in markdown
     """
     return html.Div(children=[dcc.Markdown('''
-        # Crime rates in Los Angeles
-        As of today, 138 cities in the U.S. have formally announced 100% renewable energy goals or
-        targets, while others are actively considering similar goals. Despite ambition and progress,
-        conversion towards renewable energy remains challenging.
-        Wind and solar power are becoming more cost effective, but they will always be unreliable
-        and intermittent sources of energy. They follow weather patterns with potential for lots of
-        variability. Solar power starts to die away right at sunset, when one of the two daily peaks
-        arrives (see orange curve for load).
-        **Energy Planner is a "What-If" tool to assist making power conversion plans.**
-        It can be used to explore load satisfiability under different power contribution with 
-        near-real-time energy production & consumption data.
+        # Crime rates in Los Angeles 
+        Predicting criminal activity is a fundamental challenge to police 
+        across the country. Attempting to adjust policy to crime rates haphazardly 
+        can lead to innumerable issues, including over-policing of disadvantaged 
+        neighborhoods, failure to protect citizens, or a loss of trust between 
+        citizens and the police force. When using algorithmic methods to asses 
+        crime rates, clear and well-understood data is critical to avoiding the 
+        pitfalls that, when they occur in an institution as significant as criminal 
+        justice, can cause significant harms.
+        To this end, **LA Crime Map is an exploratory tool that can be used to 
+        visualize trends in LA Crime data.** The data can be explored using the 
+        quantity of crime, the type of crime, specific areas, and geographic data.
         ### Data Source
         LA Crime Rate analysis uses data from [Los Angeles Open Data](https://data.lacity.org/).
         The [data source](https://data.lacity.org/A-Safe-City/Arrest-Data-from-2010-to-Present/yru6-6re4) 
