@@ -111,3 +111,13 @@
 2019-12-18 01:26:34,630 [upsert_crime] rows=1114, update=1114, insert=0
 2019-12-18 01:26:51,353 [upsert_crime] rows=1114, update=1114, insert=0
 2019-12-18 01:27:45,034 [fetch_all_crime] 1114 documents read from the db
+2019-12-18 01:33:46,300 [fetch_all_crime] 0 documents read from the db
+2019-12-18 01:33:47,735 [upsert_crime] rows=1114, update=0, insert=1114
+2019-12-18 01:33:49,290 [fetch_all_crime] 1114 documents read from the db
+2019-12-18 01:34:04,534 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 01:34:21,317 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 01:34:38,279 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 01:34:55,006 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 01:35:11,870 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 01:35:28,614 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 01:35:45,433 [upsert_crime] rows=1114, update=1114, insert=0
