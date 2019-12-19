@@ -95,3 +95,7 @@
 	Internal error
 >>>>>>> c2b2607aa9a1866d6c8d22881469d66e095e9c4f
 2019-12-18 14:35:37,438 [_worker] main loop worker ignores exception and continues: all indexes on collection dropped
+2019-12-19 04:02:07,075 [_worker] main loop worker ignores exception and continues: all indexes on collection dropped
+2019-12-19 22:18:23,007 [_worker] main loop worker ignores exception and continues: all indexes on collection dropped
+2019-12-19 22:44:38,825 [_worker] main loop worker ignores exception and continues: Exec error resulting in state DEAD :: caused by :: interrupted at shutdown
+2019-12-19 22:45:05,532 [_worker] main loop worker ignores exception and continues: Exec error resulting in state DEAD :: caused by :: interrupted at shutdown

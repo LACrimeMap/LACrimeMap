@@ -13,7 +13,7 @@ logger = logging.Logger(__name__)
 utils.setup_logger(logger, 'data.log')
 
 
-def download_crime(url=CRIME_SOURCE, start_date = '2019-12-08T00:00:00.000'):
+def download_crime(url=CRIME_SOURCE, start_date = '2019-12-14T00:00:00.000'):
     """Returns records from `CRIME_SOURCE` that includes crime and arrestee information.
     """
     client = Socrata(url, None)

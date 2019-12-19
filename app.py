@@ -146,13 +146,13 @@ def crime_map_tool():
     ], className='row eleven columns')
 
 
-def architecture_summary():
+def development_summary():
     """
     Returns the text and image of architecture summary of the project.
     """
     return html.Div(children=[
         dcc.Markdown('''
-            # Project Architecture
+            # Development Process and Final Technology Stack
             This project uses MongoDB as the database. All data acquired are stored in raw form to the
             database (with de-duplication). An abstract layer is built in `database.py` so all queries
             can be done via function call. For a more complicated app, the layer will also be
@@ -164,6 +164,45 @@ def architecture_summary():
         
         ''')
     ], className='row')
+
+def data_acquisition_summary():
+    """
+    Returns the text and image of architecture summary of the project.
+    """
+    return html.Div(children=[
+        dcc.Markdown('''
+            ## Data Acquisition
+            This project uses MongoDB as the database. All data acquired are stored in raw form to the
+            database (with de-duplication). An abstract layer is built in `database.py` so all queries
+            can be done via function call. For a more complicated app, the layer will also be
+            responsible for schema consistency. A `plot.ly` & `dash` app is serving this web page
+            through. Actions on responsive components on the page is redirected to `app.py` which will
+            then update certain components on the page.  
+        ''', className='row eleven columns', style={'paddingLeft': '5%','marginTop': '5%'}),
+        dcc.Markdown('''
+        
+        ''')
+    ], className='row')
+
+def enhancement_summary():
+    """
+    Returns the text and image of architecture summary of the project.
+    """
+    return html.Div(children=[
+        dcc.Markdown('''
+            ## Data Acquisition
+            This project uses MongoDB as the database. All data acquired are stored in raw form to the
+            database (with de-duplication). An abstract layer is built in `database.py` so all queries
+            can be done via function call. For a more complicated app, the layer will also be
+            responsible for schema consistency. A `plot.ly` & `dash` app is serving this web page
+            through. Actions on responsive components on the page is redirected to `app.py` which will
+            then update certain components on the page.  
+        ''', className='row eleven columns', style={'paddingLeft': '5%','marginTop': '5%'}),
+        dcc.Markdown('''
+        
+        ''')
+    ], className='row')   
+
 
 
 # Sequentially add page components to the app's layout
@@ -177,7 +216,9 @@ def dynamic_layout():
         what_if_tool(),
         crime_map_description(),
         crime_map_tool(),
-        architecture_summary(),
+        development_summary(),
+        data_acquisition_summary(),
+        enhancement_summary()
     ], className='row', id='content')
 
 
