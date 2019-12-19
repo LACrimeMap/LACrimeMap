@@ -236,7 +236,7 @@ def crime_handler(startdate, enddate, crimetype):
     fig = px.scatter_mapbox(df_map, lat='lat', lon='lon', zoom=10, height=500, color='area_desc')
     fig.update_traces(marker=dict(size=12, opacity=0.5))
     fig.update_layout(mapbox_style="stamen-terrain")
-    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},title=title)
+    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, title=title)
     return fig  
 
 @app.callback(
@@ -248,4 +248,5 @@ def update_output(value):
 
 
 if __name__ == '__main__':
+    fetch_all_crime_as_df(allow_cached=True)
     app.run_server(debug=True, port=1050, host='0.0.0.0')
