@@ -246,6 +246,7 @@ def what_if_handler(startdate, enddate):
     fig = go.Figure()
     for i, s in enumerate(crime):
         count_array = c.loc[s]['rpt_id']
+        print(count_array)
         count = [count_array[x] for x in test_axis]
         fig.add_trace(go.Scatter(x=test_axis, y=count, mode='lines', name=s,
                                  line={'width': 2, 'color': COLORS[i]},
