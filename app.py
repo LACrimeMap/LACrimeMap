@@ -31,7 +31,7 @@ def page_header():
                                                 'paddingLeft': '4px', 'color': '#a3a7b0',
                                                 'textDecoration': 'none'})],
                className="two columns row",
-               href='https://github.com/LACrimeMap/LACrimeMap'),
+               href='https://github.com/LACrimeMap/LACrimeMap')
     ], className="row")
 
 
@@ -40,7 +40,14 @@ def description():
     Returns overall project description in markdown
     """
     return html.Div(children=[dcc.Markdown('''
-        # Crime rates in Los Angeles 
+        # Crime rates in Los Angeles      
+        Prepared By:      c
+        Weihao Zhou, 
+        Kaiwen Yang, 
+        Xu Han, 
+        Laura McCallion .   
+        [About Page](https://docs.google.com/document/d/1zEYKkCu6WQKGqgfMlu1XxCjlVlqwyZc5B_qrF5GeYf8/edit?usp=sharing)
+                
         Predicting criminal activity is a fundamental challenge to police 
         across the country. Attempting to adjust policy to crime rates haphazardly 
         can lead to innumerable issues, including over-policing of disadvantaged 
@@ -55,14 +62,16 @@ def description():
         ## Data Source
         LA Crime Rate analysis uses data from [Los Angeles Open Data](https://data.lacity.org/).
         The [data source](https://data.lacity.org/A-Safe-City/Arrest-Data-from-2010-to-Present/yru6-6re4) 
-        **updates weekly**. 
-        Prepared By:      
-        Weihao Zhou, 
-        Kaiwen Yang, 
-        Xu Han, 
-        Laura McCallion .   
-        [About Page](https://docs.google.com/document/d/1zEYKkCu6WQKGqgfMlu1XxCjlVlqwyZc5B_qrF5GeYf8/edit?usp=sharing)
-        ''', className='eleven columns', style={'paddingLeft': '5%'})
+        **updates weekly**.          
+        ''', className='eleven columns', style={'paddingLeft': '5%'}),
+        html.Div(children=[
+            html.Img(id ='angel' , src="https://i.pinimg.com/originals/e3/a8/cb/e3a8cbd6c88c3134209b95e999860ce8.jpg",
+                     className='five columns'
+                    #  style={'height': '100px', 'width': '70px', 'paddingTop': '7%'}
+                     ),
+            html.Img(id = 'cat', src=app.get_asset_url('p1.png'),
+                     className='six columns'),
+        ], className='row', style={'textAlign': 'center', 'paddingLeft': '5%'})
     ], className="row")
 
 
@@ -87,15 +96,14 @@ def what_if_tool():
     demand-supply plot and rescale sliders.
     """
     return html.Div(children=[
-        html.Div(children=[dcc.Graph(id='what-if-figure')], className='nine columns'),
-
+        html.Div(children=[dcc.Graph(id='what-if-figure')], className="row"),
         html.Div(children=[
-            html.H5("Crime Rates Time Frame", style={'marginTop': '2rem'}),
+            html.H5("Choose a time frame"),
             html.Div(children=[
                 dcc.DatePickerRange(id='my-date-picker-range', min_date_allowed=dt(2018, 1, 1), max_date_allowed=dt(2019, 12, 13), initial_visible_month=dt(2019, 10, 1),
                 start_date = dt(2018,12,1), end_date=dt(2019, 8, 1))
-            ], style={'marginTop': '5rem', 'width':'40%'}),
-        ], className='three columns', style={'marginLeft': 5, 'marginTop': '15%'}),
+            ], style={'width':'40%'}),
+        ], className='row', style={'marginLeft': 5}), #'marginTop': '5%'
     ], className='row eleven columns')
 
 def crime_map_description():
@@ -104,9 +112,11 @@ def crime_map_description():
     """
     return html.Div(children=[
         dcc.Markdown('''
-        # " What If "
-        crime heatmap
-        ''', className='eleven columns', style={'paddingLeft': '5%'})
+        ## Crime map      
+        This map visualizes crime rates in each district. User can choose crime type (violent crimes or non-violent crimes) and time range. Also,
+        user can enlarge the map to see locations of crimes. Crimes in different districts have different colors. The darker the shade, the more crimes  
+        in that region.    
+        ''', className='eleven columns', style={'paddingLeft': '5%', 'marginTop': '1%'})
     ], className="row")
 
 def crime_map_tool():
@@ -118,11 +128,11 @@ def crime_map_tool():
         html.Div(children=[dcc.Graph(id='what-if-crime')], className='ten columns'),
 
         html.Div(children=[
-            html.H5("Crime Rates Time Frame", style={'marginTop': '2rem'}),
+            html.H5("Choose a time frame"),
             html.Div(children=[
                 dcc.DatePickerRange(id='crime-date-picker-range', min_date_allowed=dt(2018, 1, 1), max_date_allowed=dt(2019, 12, 13), initial_visible_month=dt(2019, 10, 1),
                 start_date = dt(2019,11,1), end_date=dt(2019, 11, 30))
-            ], style={'marginTop': '5rem', 'width':'20%'}),
+            ], style={'width':'40%'}),
             html.Div(children=[
                 dcc.Dropdown(
                 id='crime-dropdown',
@@ -130,9 +140,9 @@ def crime_map_tool():
                         {'label': 'Non-Violent Crimes', 'value': 'non_violent'},
                         {'label': 'Violent Crimes', 'value': 'violent'}],
                         value='non_violent')
-            ], style={'marginTop': '5rem', 'width':'20%'}),
-            html.Div(id='dd-output-container'),
-        ], className='three columns', style={'marginLeft': 5, 'marginTop': '15%'}),
+            ,html.Div(id='dd-output-container')], style={'width':'100%'}),
+            
+        ], className='three columns', style={'marginLeft': 5, 'marginTop': '5%'}),
     ], className='row eleven columns')
 
 
@@ -149,13 +159,7 @@ def architecture_summary():
             responsible for schema consistency. A `plot.ly` & `dash` app is serving this web page
             through. Actions on responsive components on the page is redirected to `app.py` which will
             then update certain components on the page.  
-        ''', className='row eleven columns', style={'paddingLeft': '5%'}),
-
-        html.Div(children=[
-            html.Img(src="https://docs.google.com/drawings/d/e/2PACX-1vQNerIIsLZU2zMdRhIl3ZZkDMIt7jhE_fjZ6ZxhnJ9bKe1emPcjI92lT5L7aZRYVhJgPZ7EURN0AqRh/pub?w=670&amp;h=457",
-                     className='row'),
-        ], className='row', style={'textAlign': 'center'}),
-
+        ''', className='row eleven columns', style={'paddingLeft': '5%','marginTop': '5%'}),
         dcc.Markdown('''
         
         ''')
@@ -228,7 +232,6 @@ def crime_handler(startdate, enddate, crimetype):
     df_map = df[(df['arst_date'] <= enddate)&(df['arst_date'] >= startdate)&(df['crime_type']==crimetype)]
     title = 'Crime map'
     fig = px.scatter_mapbox(df_map, lat='lat', lon='lon', zoom=10, height=500, color='area_desc')
-    
     fig.update_traces(marker=dict(size=12, opacity=0.5))
     fig.update_layout(mapbox_style="stamen-terrain")
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},title=title)

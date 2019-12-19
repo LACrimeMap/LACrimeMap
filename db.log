@@ -3094,3 +3094,839 @@
 2019-12-18 15:10:47,731 [upsert_crime] rows=1114, update=1114, insert=0
 2019-12-18 15:11:04,486 [upsert_crime] rows=1114, update=1114, insert=0
 2019-12-18 15:11:21,265 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:11:38,068 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:11:54,910 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:12:11,864 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:12:28,723 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:12:45,400 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:13:02,185 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:13:19,000 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:13:35,720 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:13:52,445 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:14:09,213 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:14:25,889 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:14:42,880 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:14:59,756 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:15:16,531 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:15:33,321 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:15:50,116 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:16:07,012 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:16:23,865 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:16:40,666 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:16:57,560 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:17:14,785 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:17:32,584 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:17:49,495 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 15:18:06,365 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:05:53,033 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:06:09,845 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:06:26,688 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:06:43,443 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:07:00,365 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:07:17,102 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:07:33,845 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:07:50,655 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:08:07,369 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:08:24,202 [upsert_crime] rows=1114, update=0, insert=1114
+2019-12-18 22:08:41,242 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:08:58,086 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:09:12,772 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:09:12,892 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:09:14,812 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:09:31,645 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:09:36,079 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:09:36,378 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:09:48,448 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:10:05,299 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:10:22,095 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:10:38,867 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:10:55,763 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:11:12,454 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:11:29,261 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:11:46,034 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:12:02,779 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:12:19,492 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:12:36,315 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:12:53,035 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:13:09,865 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:13:26,656 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:13:43,454 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:14:00,255 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:14:17,001 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:14:33,843 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:14:50,639 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:15:07,341 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:15:24,152 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:15:40,972 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:15:57,716 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:16:14,774 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:16:28,433 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:16:28,892 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:16:31,622 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:16:48,444 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:17:05,703 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:17:21,124 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:17:21,241 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:17:22,533 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:17:39,290 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:17:56,181 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:18:13,101 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:18:29,886 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:18:47,211 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:19:03,988 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:19:20,731 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:19:37,679 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:19:54,492 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:20:11,321 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:20:28,097 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:20:44,844 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:21:01,680 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:21:18,789 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:21:35,653 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:21:52,596 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:22:09,327 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:22:26,153 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:22:42,985 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:22:59,765 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:23:16,624 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:23:33,348 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:23:50,099 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:24:06,845 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:24:23,670 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:24:40,502 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:24:57,379 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:25:14,141 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:25:30,840 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:25:47,599 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:26:04,456 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:26:21,363 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:26:38,393 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:26:55,219 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:27:12,232 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:27:28,941 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:27:45,800 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:28:02,596 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:28:19,353 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:28:36,332 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:28:53,033 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:29:09,815 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:29:26,623 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:29:43,463 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:30:00,643 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:30:17,688 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:30:34,591 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:30:51,512 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:31:08,313 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:31:25,283 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:31:42,088 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:31:58,821 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:32:15,753 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:32:32,672 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:32:49,494 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:33:06,275 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:33:23,029 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:33:39,853 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:33:56,626 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:34:13,406 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:34:30,191 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:34:46,971 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:35:03,757 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:35:20,459 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:35:37,258 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:35:53,996 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:36:10,712 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:36:27,549 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:36:44,309 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:37:01,045 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:37:17,835 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:37:34,542 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:37:51,204 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:38:08,012 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:38:24,770 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:38:41,466 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:38:58,274 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:39:15,245 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:39:32,046 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:39:48,819 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:40:05,911 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:40:31,289 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:40:52,152 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:41:10,060 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:41:27,484 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:41:44,896 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:42:02,089 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:42:19,474 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:42:37,063 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:42:57,098 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:43:16,276 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:43:33,534 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:43:52,038 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:44:09,881 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:44:27,439 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:44:44,841 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:45:01,970 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:45:19,301 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:45:37,693 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:45:56,084 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:46:13,700 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:46:15,557 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:46:15,795 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:46:31,025 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:46:48,178 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:47:05,282 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:47:22,624 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:47:39,910 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:47:41,301 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:47:41,849 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:47:57,129 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:48:14,254 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:48:31,519 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:48:48,973 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:49:06,171 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:49:23,215 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:49:40,296 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:49:57,154 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:50:14,356 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:50:31,333 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:50:48,122 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:51:05,171 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:51:22,091 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:51:38,921 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:51:55,694 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:52:12,613 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:52:29,555 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:52:46,322 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:53:03,068 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:53:19,828 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:53:36,591 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:53:53,326 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:54:10,165 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:54:26,930 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:54:43,727 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:55:00,571 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:55:17,250 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:55:33,992 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:55:50,835 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:56:07,501 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:56:24,244 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:56:41,023 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:56:57,671 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:57:14,460 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:57:31,200 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:57:47,960 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:58:04,772 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:58:20,151 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:58:20,336 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 22:58:21,449 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:58:38,166 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:58:54,948 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:59:11,647 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:59:28,332 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 22:59:45,384 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:00:02,101 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:00:18,854 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:00:35,772 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:00:52,515 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:01:09,334 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:01:26,134 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:01:42,881 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:01:59,607 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:02:16,469 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:02:33,259 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:02:50,053 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:03:06,792 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:03:23,565 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:03:40,340 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:03:57,085 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:04:13,780 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:04:30,543 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:04:47,263 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:05:03,971 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:05:20,789 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:05:37,767 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:05:50,623 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:05:50,683 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:05:54,614 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:06:11,432 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:06:28,159 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:06:45,007 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:07:01,806 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:07:18,558 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:07:35,478 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:07:44,422 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:07:44,587 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:07:52,324 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:08:09,098 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:08:25,962 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:08:31,163 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:08:31,249 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:08:42,832 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:08:59,588 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:09:16,444 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:09:33,166 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:09:49,955 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:10:06,688 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:10:23,357 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:10:40,159 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:10:56,948 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:11:13,693 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:11:30,455 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:11:47,297 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:12:04,067 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:12:20,833 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:12:37,603 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:12:54,323 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:12:58,482 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:13:01,141 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:13:11,159 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:13:27,930 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:13:44,703 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:14:01,408 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:14:18,141 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:14:34,902 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:14:51,623 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:15:08,378 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:15:25,166 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:15:41,898 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:15:58,657 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:16:15,457 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:16:32,398 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:16:49,152 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:17:05,996 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:17:22,746 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:17:39,453 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:17:56,145 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:18:12,932 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:18:29,740 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:18:46,498 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:19:03,210 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:19:19,989 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:19:36,694 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:19:53,535 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:20:10,257 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:20:27,021 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:20:43,849 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:21:00,634 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:21:17,411 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:21:34,194 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:21:50,972 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:22:07,807 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:22:24,516 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:22:41,285 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:22:58,034 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:23:15,067 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:23:31,870 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:23:48,578 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:24:05,418 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:24:22,297 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:24:39,021 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:24:55,797 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:25:12,559 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:25:29,294 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:25:46,083 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:26:02,785 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:26:19,550 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:26:36,335 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:26:53,118 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:27:09,867 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:27:26,547 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:27:43,294 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:28:00,107 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:28:16,878 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:28:33,771 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:28:50,535 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:29:07,229 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:29:23,999 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:29:40,647 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:29:57,413 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:30:14,142 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:30:30,916 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:30:47,724 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:31:04,445 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:31:21,094 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:31:37,864 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:31:54,585 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:32:11,277 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:32:28,086 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:32:44,858 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:33:01,586 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:33:18,283 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:33:35,102 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:33:51,839 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:34:08,633 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:34:25,338 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:34:42,071 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:34:58,813 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:35:15,685 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:35:32,385 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:35:49,100 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:36:05,827 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:36:22,517 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:36:39,242 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:36:55,959 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:37:12,801 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:37:15,106 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:37:15,393 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:37:29,697 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:37:46,454 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:38:03,143 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:38:19,862 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:38:34,651 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:38:34,757 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:38:36,771 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:38:53,474 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:39:10,134 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:39:17,913 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:39:19,203 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:39:26,923 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:39:43,581 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:40:00,335 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:40:17,077 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:40:18,539 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:40:18,723 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:40:33,827 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:40:40,524 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:40:40,809 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:40:50,513 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:41:00,472 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:41:00,812 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:41:07,281 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:41:24,095 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:41:33,116 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:41:33,338 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:41:40,822 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:41:57,533 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:42:14,201 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:42:30,958 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:42:47,669 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:43:04,424 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:43:21,189 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:43:37,887 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:43:54,621 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:44:11,312 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:44:28,011 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:44:44,745 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:45:01,602 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:45:18,319 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:45:35,081 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:45:51,832 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:46:08,611 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:46:25,307 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:46:42,052 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:46:58,769 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:47:15,662 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:47:32,501 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:47:49,301 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:48:06,144 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:48:10,872 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:48:11,055 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:48:22,851 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:48:29,400 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:48:29,722 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:48:39,555 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:48:56,281 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:49:12,992 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:49:23,632 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:49:23,845 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:49:29,799 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:49:46,482 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:49:58,696 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:49:59,930 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:50:03,253 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:50:20,001 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:50:36,815 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:50:53,554 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:51:10,550 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:51:27,268 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:51:37,915 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:51:38,129 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:51:44,057 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:52:00,776 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:52:17,553 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:52:34,292 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:52:51,040 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:53:07,987 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:53:09,873 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:53:09,964 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:53:24,829 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:53:41,608 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:53:58,276 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:54:15,058 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:54:19,415 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:54:20,607 [fetch_all_crime] 194784 documents read from the db
+2019-12-18 23:54:31,814 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:54:48,540 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:55:05,382 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:55:22,141 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:55:38,834 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:55:55,526 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:56:12,239 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:56:28,926 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:56:45,629 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:57:02,404 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:57:19,174 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:57:35,893 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:57:52,612 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:58:09,376 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:58:26,148 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:58:42,892 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:58:59,967 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:59:16,685 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:59:33,408 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-18 23:59:50,151 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:00:06,878 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:00:23,645 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:00:40,388 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:00:57,195 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:01:13,868 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:01:30,718 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:01:47,539 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:02:04,379 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:02:21,396 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:02:38,188 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:02:55,177 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:03:12,220 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:03:28,989 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:03:45,750 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:04:02,507 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:04:19,269 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:04:36,022 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:04:52,722 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:05:09,411 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:05:26,172 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:05:42,895 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:05:59,631 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:06:16,432 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:06:33,156 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:06:49,914 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:07:06,706 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:07:23,593 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:07:40,445 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:07:57,443 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:08:14,210 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:08:30,987 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:08:47,824 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:09:04,585 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:09:21,306 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:09:38,035 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:09:54,883 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:10:11,625 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:10:28,397 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:10:45,216 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:11:02,025 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:11:18,839 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:11:35,748 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:11:52,465 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:12:09,354 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:12:26,178 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:12:43,096 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:13:00,117 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:13:17,109 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:13:34,009 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:13:50,905 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:13:55,403 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:13:55,448 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:14:07,699 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:14:24,469 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:14:41,485 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:14:58,256 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:15:15,029 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:15:31,800 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:15:48,553 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:16:05,321 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:16:22,083 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:16:38,900 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:16:55,847 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:17:04,324 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:17:04,391 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:17:12,723 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:17:29,578 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:17:46,431 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:17:56,380 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:17:56,401 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:18:03,261 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:18:20,062 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:18:36,880 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:18:47,246 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:18:47,365 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:18:53,936 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:19:10,650 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:19:27,403 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:19:44,119 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:20:01,200 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:20:17,946 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:20:34,727 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:20:51,464 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:21:08,317 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:21:25,033 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:21:41,763 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:21:58,483 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:22:15,262 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:22:31,946 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:22:44,753 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:22:44,818 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:22:48,869 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:23:05,671 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:23:22,358 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:23:39,118 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:23:55,915 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:24:12,590 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:24:29,336 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:24:46,151 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:25:03,180 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:25:19,988 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:25:36,882 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:25:50,225 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:25:51,444 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:25:53,720 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:26:10,520 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:26:27,305 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:26:44,045 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:27:00,740 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:27:17,424 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:27:34,289 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:27:50,960 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:28:07,815 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:28:24,611 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:28:32,686 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:28:32,967 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:28:41,402 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:28:58,131 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:29:15,024 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:29:24,680 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:29:24,854 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:29:31,770 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:29:48,587 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:30:05,437 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:30:22,114 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:30:38,899 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:30:55,739 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:31:12,727 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:31:29,578 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:31:46,396 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:32:03,099 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:32:19,852 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:32:36,572 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:32:53,340 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:33:10,174 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:33:27,114 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:33:43,846 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:34:00,596 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:34:17,409 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:34:34,213 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:34:50,938 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:35:07,663 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:35:24,333 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:35:41,042 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:35:57,810 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:35:57,847 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:35:58,083 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:36:14,550 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:36:31,301 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:36:48,057 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:37:04,742 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:37:17,804 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:37:19,344 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:37:21,467 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:37:38,204 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:37:46,039 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:37:46,081 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:37:55,052 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:38:11,809 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:38:28,570 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:38:45,364 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:39:02,089 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:39:18,859 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:39:35,674 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:39:52,377 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:40:09,105 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:40:25,938 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:40:42,746 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:40:59,514 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:41:16,216 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:41:32,958 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:41:49,048 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:41:49,779 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:41:50,268 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:42:06,640 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:42:23,405 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:42:40,129 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:42:56,966 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:43:13,722 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:43:30,535 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:43:37,346 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:43:37,533 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:43:47,300 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:44:04,052 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:44:20,842 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:44:37,492 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:44:54,278 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:45:11,781 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:45:28,663 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:45:46,618 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:46:03,519 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:46:20,367 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:46:37,167 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:46:53,964 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:47:10,784 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:47:27,600 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:47:44,395 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:48:01,120 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:48:17,967 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:48:34,811 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:48:51,654 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:49:08,489 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:49:25,338 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:49:42,825 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:49:59,645 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:50:16,407 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:50:33,244 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:50:50,195 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:51:06,960 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:51:23,690 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:51:40,574 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:51:57,897 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:52:14,818 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:52:31,631 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:52:48,401 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:53:05,086 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:53:22,141 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:53:38,942 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:53:55,852 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:54:12,624 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:54:29,496 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:54:46,198 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:55:03,013 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:55:19,878 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:55:36,811 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:55:53,683 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:56:10,593 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:56:27,426 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:56:44,306 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:57:01,155 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:57:17,976 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:57:34,788 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:57:51,599 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:58:08,318 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:58:25,064 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:58:42,142 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:58:59,018 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:59:07,520 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:59:07,561 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 00:59:15,947 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:59:32,726 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 00:59:49,440 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:00:06,311 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:00:07,258 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:00:07,473 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:00:23,052 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:00:32,039 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:00:32,215 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:00:39,852 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:00:56,667 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:01:13,470 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:01:30,211 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:01:47,060 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:02:03,814 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:02:20,586 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:02:37,471 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:02:54,221 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:03:11,022 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:03:28,022 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:03:45,009 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:04:01,866 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:04:18,643 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:04:28,011 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:04:28,047 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:04:35,490 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:04:52,244 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:05:08,994 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:05:25,771 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:05:42,582 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:05:59,501 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:06:16,270 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:06:32,980 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:06:49,711 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:07:06,508 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:07:23,307 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:07:40,104 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:07:56,861 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:08:13,869 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:08:30,652 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:08:37,632 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:08:37,660 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:08:47,404 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:09:04,164 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:09:21,105 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:09:34,844 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:09:34,869 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:09:38,401 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:09:55,299 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:10:12,156 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:10:29,176 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:10:46,016 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:11:03,215 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:11:20,023 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:11:26,159 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:11:27,290 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:11:37,044 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:11:53,810 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:12:10,683 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:12:27,428 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:12:44,320 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:12:54,993 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:12:55,071 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:13:01,120 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:13:18,142 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:13:35,078 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:13:51,944 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:14:08,757 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:14:25,667 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:14:42,608 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:14:59,315 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:15:16,149 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:15:33,285 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:15:50,164 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:16:06,987 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:16:23,896 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:16:40,849 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:16:57,647 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:17:14,529 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:17:31,321 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:17:48,078 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:18:04,861 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:18:13,354 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:18:13,357 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:18:21,640 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:18:38,388 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:18:55,212 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:19:11,979 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:19:28,832 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:19:45,624 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:20:02,396 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:20:19,806 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:20:32,119 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:20:32,238 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:20:36,603 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:20:53,349 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:21:10,123 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:21:26,887 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:21:43,718 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:21:47,619 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:21:48,843 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:22:00,459 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:22:17,187 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:22:33,993 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:22:51,124 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:22:55,387 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:22:55,702 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:23:07,900 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:23:15,503 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:23:15,995 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:23:24,938 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:23:37,008 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:23:37,107 [fetch_all_crime] 194784 documents read from the db
+2019-12-19 01:23:41,723 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:23:58,391 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:24:15,242 [upsert_crime] rows=1114, update=1114, insert=0
+2019-12-19 01:24:31,999 [upsert_crime] rows=1114, update=1114, insert=0
