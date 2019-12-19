@@ -8,6 +8,7 @@ def load(start_date):
     results = download_crime(url=CRIME_SOURCE, start_date = start_date)
     db = client.get_database("crime")
     collection = db.get_collection("crime")
+    collection.drop() # empty the database before insert many
     collection.insert_many(results)
         
 if __name__ == '__main__':
