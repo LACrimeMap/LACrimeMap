@@ -40,14 +40,14 @@ def description():
     Returns overall project description in markdown
     """
     return html.Div(children=[dcc.Markdown('''
-        # Crime rates in Los Angeles      
-        Prepared By:      c
+        # Crime rates in Los Angeles   
+        [About Page](https://docs.google.com/document/d/1zEYKkCu6WQKGqgfMlu1XxCjlVlqwyZc5B_qrF5GeYf8/edit?usp=sharing)   
+        ## Team:
         Weihao Zhou, 
         Kaiwen Yang, 
         Xu Han, 
-        Laura McCallion .   
-        [About Page](https://docs.google.com/document/d/1zEYKkCu6WQKGqgfMlu1XxCjlVlqwyZc5B_qrF5GeYf8/edit?usp=sharing)
-                
+        Laura McCallion.   
+        
         Predicting criminal activity is a fundamental challenge to police 
         across the country. Attempting to adjust policy to crime rates haphazardly 
         can lead to innumerable issues, including over-policing of disadvantaged 
@@ -152,7 +152,7 @@ def development_summary():
     """
     return html.Div(children=[
         dcc.Markdown('''
-            ## Development Process and Final Technology Stack
+            ## Development Process
             This project uses MongoDB as the database. All data acquired are stored in raw form to the
             database (with de-duplication). An abstract layer is built in `database.py` so all queries
             can be done via function call.         
@@ -173,10 +173,15 @@ def data_acquisition_summary():
     return html.Div(children=[
         dcc.Markdown('''
             ## Data Acquisition
+            Steps: 
             * Use API to query history records from January 1st, 2018 and load it into MongoDB (load_data.py)
             * data_acquire.py will check every 15 seconds and call the function upsert_crime from database.py
             * Before the app server is up, fetch_all_crime_as_df will be called and the results will be cached to reduce access latency
             * app server will run alongside with data_acquire.py to capture real-time updates, also providing an interface for the user to explore crime rate trend
+                  
+            Links:
+            * [ETL_EDA notebook](https://github.com/LACrimeMap/LACrimeMap/blob/master/ETL_EDA.ipynb)
+            * [ETL_EDA pdf](https://drive.google.com/open?id=1-OkSnCJjlHQU7cF4zV9CqeO8U-dKfXDv)
         ''', className='row eleven columns', style={'paddingLeft': '5%','marginTop': '5%'}),
         dcc.Markdown('''
         
@@ -189,13 +194,14 @@ def enhancement_summary():
     """
     return html.Div(children=[
         dcc.Markdown('''
-            ## Data Acquisition
-            This project uses MongoDB as the database. All data acquired are stored in raw form to the
-            database (with de-duplication). An abstract layer is built in `database.py` so all queries
-            can be done via function call. For a more complicated app, the layer will also be
-            responsible for schema consistency. A `plot.ly` & `dash` app is serving this web page
-            through. Actions on responsive components on the page is redirected to `app.py` which will
-            then update certain components on the page.  
+            ## Enhancement
+            Develop time series models to predict the number of crimes in a particular district or whole city. 
+            Web-users could change inputs (a particular district or whole city) to visualize the prediction result.   
+            In our notebook where we used the whole city as an example, the baseline MSE is 7017, while our model achieves 4644, 
+            which is better than the baseline model.     
+
+            * The [enhancement notebook](https://github.com/LACrimeMap/LACrimeMap/blob/master/Enhancement.ipynb)         
+            * The [enhancement pdf](https://drive.google.com/open?id=1V77GMJvCvnekd5IfGeu3yt6cAzufEJSM)          
         ''', className='row eleven columns', style={'paddingLeft': '5%','marginTop': '5%'}),
         dcc.Markdown('''
         
