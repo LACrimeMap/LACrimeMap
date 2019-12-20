@@ -4924,3 +4924,26 @@
 2019-12-20 20:03:12,955 [upsert_crime] rows=147, update=147, insert=0
 2019-12-20 20:03:47,273 [upsert_crime] rows=147, update=147, insert=0
 2019-12-20 20:04:21,344 [upsert_crime] rows=147, update=147, insert=0
+2019-12-20 20:04:55,874 [upsert_crime] rows=147, update=147, insert=0
+2019-12-20 20:05:29,727 [upsert_crime] rows=147, update=147, insert=0
+2019-12-20 20:06:55,808 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 20:07:06,479 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 20:07:11,043 [upsert_crime] rows=147, update=147, insert=0
+2019-12-20 20:07:48,001 [upsert_crime] rows=147, update=147, insert=0
+2019-12-20 20:09:14,827 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:09:20,969 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 20:09:30,282 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:09:33,107 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 20:09:45,790 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:10:01,254 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:10:16,682 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:10:32,128 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:10:47,578 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:11:03,072 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:11:18,544 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:11:33,980 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:11:49,453 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:12:04,909 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:12:20,293 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:12:35,674 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:12:51,241 [upsert_crime] rows=0, update=0, insert=0

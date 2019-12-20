@@ -16,7 +16,7 @@ utils.setup_logger(logger, 'data.log')
 def download_crime(url=CRIME_SOURCE, start_date = None):
     """Returns records from `CRIME_SOURCE` that includes crime and arrestee information.
     """
-    one_week_ago = datetime.now() - timedelta(days=7)
+    one_week_ago = datetime.now() - timedelta(days=5)
     if start_date == None:
         start_date = one_week_ago.strftime('%Y-%m-%d') + 'T00:00:00.000'
     client = Socrata(url, None)
