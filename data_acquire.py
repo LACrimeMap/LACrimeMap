@@ -16,7 +16,7 @@ utils.setup_logger(logger, 'data.log')
 def download_crime(url=CRIME_SOURCE, start_date = None):
     """Returns records from `CRIME_SOURCE` that includes crime and arrestee information.
     """
-    one_week_ago = datetime.now() - timedelta(days=7)
+    one_week_ago = datetime.now() - timedelta(days=10)
     if start_date == None:
         start_date = one_week_ago.strftime('%Y-%m-%d') + 'T00:00:00.000'
     client = Socrata(url, None)
@@ -24,11 +24,9 @@ def download_crime(url=CRIME_SOURCE, start_date = None):
     return results
 
 def convert_crime(results):
-    """Converts `results` to `DataFrame`, removes empty lines and descriptions
+    """Converts `results` to `DataFrame`
     """
-    # use StringIO to convert string to a readable buffer
     df = pd.DataFrame.from_records(results)
-    #df.dropna(inplace=True)             # drop rows with empty cells
     return df
 
 
