@@ -195,13 +195,17 @@ def enhancement_summary():
     return html.Div(children=[
         dcc.Markdown('''
             ## Enhancement
+            #### Prediction
             Develop time series models to predict the number of crimes in a particular district or whole city. 
             Web-users could change inputs (a particular district or whole city) to visualize the prediction result.   
             In our notebook where we used the whole city as an example, the baseline MSE is 7017, while our model achieves 4644, 
             which is better than the baseline model.     
 
             * The [enhancement notebook](https://github.com/LACrimeMap/LACrimeMap/blob/master/Enhancement.ipynb)         
-            * The [enhancement pdf](https://drive.google.com/open?id=1V77GMJvCvnekd5IfGeu3yt6cAzufEJSM)          
+            * The [enhancement pdf](https://drive.google.com/open?id=1V77GMJvCvnekd5IfGeu3yt6cAzufEJSM)  
+            
+            #### GCP Deployment
+            Website: http://34.67.248.169:1050/     
         ''', className='row eleven columns', style={'paddingLeft': '5%','marginTop': '5%'}),
         dcc.Markdown('''
         
