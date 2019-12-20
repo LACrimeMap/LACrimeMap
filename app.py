@@ -148,16 +148,17 @@ def crime_map_tool():
 
 def development_summary():
     """
-    Returns the text and image of architecture summary of the project.
+    Returns the text of architecture summary of the project.
     """
     return html.Div(children=[
         dcc.Markdown('''
-            # Development Process and Final Technology Stack
+            ## Development Process and Final Technology Stack
             This project uses MongoDB as the database. All data acquired are stored in raw form to the
             database (with de-duplication). An abstract layer is built in `database.py` so all queries
-            can be done via function call. For a more complicated app, the layer will also be
-            responsible for schema consistency. A `plot.ly` & `dash` app is serving this web page
-            through. Actions on responsive components on the page is redirected to `app.py` which will
+            can be done via function call.         
+                       
+            For a more complicated app, the layer will also be responsible for schema consistency. 
+            A `plot.ly` & `dash` app is serving this web page through. Actions on responsive components on the page is redirected to `app.py` which will
             then update certain components on the page.  
         ''', className='row eleven columns', style={'paddingLeft': '5%','marginTop': '5%'}),
         dcc.Markdown('''
@@ -167,17 +168,15 @@ def development_summary():
 
 def data_acquisition_summary():
     """
-    Returns the text and image of architecture summary of the project.
+    Returns the text of data acquisition technique of the project.
     """
     return html.Div(children=[
         dcc.Markdown('''
             ## Data Acquisition
-            This project uses MongoDB as the database. All data acquired are stored in raw form to the
-            database (with de-duplication). An abstract layer is built in `database.py` so all queries
-            can be done via function call. For a more complicated app, the layer will also be
-            responsible for schema consistency. A `plot.ly` & `dash` app is serving this web page
-            through. Actions on responsive components on the page is redirected to `app.py` which will
-            then update certain components on the page.  
+            * Use API to query history records from January 1st, 2018 and load it into MongoDB (load_data.py)
+            * data_acquire.py will check every 15 seconds and call the function upsert_crime from database.py
+            * Before the app server is up, fetch_all_crime_as_df will be called and the results will be cached to reduce access latency
+            * app server will run alongside with data_acquire.py to capture real-time updates, also providing an interface for the user to explore crime rate trend
         ''', className='row eleven columns', style={'paddingLeft': '5%','marginTop': '5%'}),
         dcc.Markdown('''
         

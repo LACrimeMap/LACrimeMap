@@ -4413,3 +4413,30 @@
 2019-12-19 23:51:57,787 [upsert_crime] rows=47, update=47, insert=0
 2019-12-19 23:52:22,673 [upsert_crime] rows=47, update=47, insert=0
 2019-12-19 23:52:49,438 [upsert_crime] rows=47, update=47, insert=0
+2019-12-19 23:56:11,856 [fetch_all_crime] 193691 documents read from the db
+2019-12-19 23:56:35,536 [fetch_all_crime] 193691 documents read from the db
+2019-12-19 23:57:06,796 [fetch_all_crime] 193691 documents read from the db
+2019-12-19 23:57:33,686 [fetch_all_crime] 193691 documents read from the db
+2019-12-19 23:59:31,484 [fetch_all_crime] 193691 documents read from the db
+2019-12-19 23:59:56,899 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:01:41,783 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:02:06,782 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:02:32,884 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:02:56,855 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:03:27,103 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:04:40,184 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:05:57,989 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:06:23,297 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:07:01,644 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:09:36,992 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:10:44,204 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:11:09,135 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:11:51,980 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:13:55,496 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:14:29,275 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:14:52,710 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:15:30,850 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:18:26,573 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:19:30,098 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:19:55,556 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 00:20:23,265 [fetch_all_crime] 193691 documents read from the db
