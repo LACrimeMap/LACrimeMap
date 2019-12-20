@@ -13,12 +13,12 @@ DOWNLOAD_PERIOD = 15         # second
 logger = logging.Logger(__name__)
 utils.setup_logger(logger, 'data.log')
 
-#startdate = datetime.now() - timedelta(days=7)
-#startdate.strftime('%Y-%m-%d')+'T00:00:00.000'
-
-def download_crime(url=CRIME_SOURCE, start_date = '2019-12-14T00:00:00.000'):
+def download_crime(url=CRIME_SOURCE, start_date = None):
     """Returns records from `CRIME_SOURCE` that includes crime and arrestee information.
     """
+    one_week_ago = datetime.now() - timedelta(days=7)
+    if start_date == None:
+        start_date = one_week_ago.strftime('%Y-%m-%d') + 'T00:00:00.000'
     client = Socrata(url, None)
     results = client.get("yru6-6re4",where=f"arst_date >= '{start_date}'", limit = 1400000) 
     return results

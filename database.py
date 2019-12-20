@@ -9,7 +9,7 @@ import utils
 client = pymongo.MongoClient()
 logger = logging.Logger(__name__)
 utils.setup_logger(logger, 'db.log')
-RESULT_CACHE_EXPIRATION = 2000
+RESULT_CACHE_EXPIRATION = 2200
 
 def upsert_crime(df):
     """
