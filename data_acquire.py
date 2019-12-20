@@ -6,12 +6,15 @@ import utils
 from database import upsert_crime 
 from sodapy import Socrata
 from datetime import datetime
+from datetime import timedelta
 
 CRIME_SOURCE = "data.lacity.org"
 DOWNLOAD_PERIOD = 15         # second
 logger = logging.Logger(__name__)
 utils.setup_logger(logger, 'data.log')
 
+#startdate = datetime.now() - timedelta(days=7)
+#startdate.strftime('%Y-%m-%d')+'T00:00:00.000'
 
 def download_crime(url=CRIME_SOURCE, start_date = '2019-12-14T00:00:00.000'):
     """Returns records from `CRIME_SOURCE` that includes crime and arrestee information.
