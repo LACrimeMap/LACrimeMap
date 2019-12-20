@@ -4468,3 +4468,84 @@
 2019-12-20 00:47:53,104 [fetch_all_crime] 193691 documents read from the db
 2019-12-20 00:48:20,613 [fetch_all_crime] 193691 documents read from the db
 2019-12-20 00:48:49,798 [fetch_all_crime] 193691 documents read from the db
+2019-12-20 01:55:39,916 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 01:55:41,297 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 01:55:50,023 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 01:56:03,685 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 01:56:25,010 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 01:56:46,058 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 01:57:06,934 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 01:57:28,260 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 01:57:49,196 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 01:58:10,485 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 01:58:31,648 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 01:58:52,594 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 01:59:13,580 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 01:59:34,524 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 01:59:55,671 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:00:17,531 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:00:38,694 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:00:59,703 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:01:20,609 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:01:41,880 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:02:02,985 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:02:23,997 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:02:45,006 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:03:05,060 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 02:03:06,242 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:03:27,158 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:03:48,183 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:03:51,667 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 02:04:09,095 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:04:30,116 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:04:51,106 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:05:11,946 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:05:32,869 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:05:53,773 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:06:14,680 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:06:35,489 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:06:56,608 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:07:17,569 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:07:38,769 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:07:59,725 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:08:20,808 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:08:41,847 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:09:02,836 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:09:23,829 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:09:44,727 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:10:05,716 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:10:26,751 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:10:47,720 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:11:08,634 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:11:29,638 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:11:50,563 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:12:11,575 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:12:32,572 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:12:53,771 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:13:14,814 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:13:35,622 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:13:56,427 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:14:17,551 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:14:38,552 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:14:59,604 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:15:12,262 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 02:15:20,671 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:15:21,760 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 02:15:41,660 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:16:02,608 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:16:23,522 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:16:36,608 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 02:16:44,464 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:16:46,137 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 02:17:05,384 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:17:26,263 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:17:47,187 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:18:08,102 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:18:29,042 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:18:50,403 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:19:11,346 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:19:32,343 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:19:53,282 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:20:14,210 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:20:35,135 [upsert_crime] rows=47, update=47, insert=0
+2019-12-20 02:20:56,934 [upsert_crime] rows=47, update=47, insert=0

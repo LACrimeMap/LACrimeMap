@@ -190,7 +190,7 @@ def data_acquisition_summary():
 
 def enhancement_summary():
     """
-    Returns the text and image of architecture summary of the project.
+    Returns the text of time series model.
     """
     return html.Div(children=[
         dcc.Markdown('''
@@ -208,6 +208,37 @@ def enhancement_summary():
         ''')
     ], className='row')   
 
+def next_step():
+    """
+    Returns the text of possible next improvement.
+    """
+    return html.Div(children=[
+        dcc.Markdown('''
+            ## Next steps          
+            * Possibly create index for faster query and decrease the website loading latency   
+            * Add exception handling and consider situations when interactive plots may break
+            * Add another interactive dashboard for crime numbers prediction, allows the users to choose area (1-21) or whole city for prediction      
+        ''', className='row eleven columns', style={'paddingLeft': '5%','marginTop': '5%'}),
+        dcc.Markdown('''
+        
+        ''')
+    ], className='row') 
+
+def reference():
+    """
+    Returns the text of possible next improvement.
+    """
+    return html.Div(children=[
+        dcc.Markdown('''
+            ## Reference         
+            * [Kaggle time series forecast](https://www.kaggle.com/ambarish/eda-lacrimes-maps-timeseriesforecasts-xgboost)
+            * [Kaggle global spatial autocorrelation](https://www.kaggle.com/ghannay/spatial-autocorrelation-of-la-crime)
+        ''', className='row eleven columns', style={'paddingLeft': '5%','marginTop': '5%'}),
+        dcc.Markdown('''
+        
+        ''')
+    ], className='row') 
+
 
 
 # Sequentially add page components to the app's layout
@@ -223,7 +254,9 @@ def dynamic_layout():
         crime_map_tool(),
         development_summary(),
         data_acquisition_summary(),
-        enhancement_summary()
+        enhancement_summary(),
+        next_step(),
+        reference()
     ], className='row', id='content')
 
 
