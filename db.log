@@ -4947,3 +4947,9 @@
 2019-12-20 20:12:20,293 [upsert_crime] rows=0, update=0, insert=0
 2019-12-20 20:12:35,674 [upsert_crime] rows=0, update=0, insert=0
 2019-12-20 20:12:51,241 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:24:16,856 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:24:21,936 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 20:24:32,279 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:24:32,522 [fetch_all_crime] 193670 documents read from the db
+2019-12-20 20:24:47,728 [upsert_crime] rows=0, update=0, insert=0
+2019-12-20 20:25:03,195 [upsert_crime] rows=0, update=0, insert=0

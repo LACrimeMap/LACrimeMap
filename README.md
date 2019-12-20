@@ -9,7 +9,7 @@ The [data source](https://data.lacity.org/A-Safe-City/Arrest-Data-from-2010-to-P
 The project also visualizes the data and functions as an interactive exploratory
 tool. 
                            
-Our website can be found [here](http://35.245.178.4:1050).
+Our website can be found [here](http://34.67.248.169:1050/).
 ## Project Architecture:
 This project uses MongoDB as the database. All data acquired are stored in raw form to the 
 database (with de-duplication). An abstract layer is built in `database.py`.
