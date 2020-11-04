@@ -312,8 +312,10 @@ def crime_handler(startdate, enddate, crimetype):
     df.dropna(subset=['grp_description'],inplace=True)
     violent = ['Homicide','Aggravated Assault','Weapon (carry/poss)']
     df['crime_type'] = df['grp_description'].apply(lambda x:"violent" if x in violent else "non_violent")
-    df['lat'] = pd.to_numeric(df['location_1'].apply(lambda x:x['latitude']))
-    df['lon'] = pd.to_numeric(df['location_1'].apply(lambda x:x['longitude']))
+    #df['lat'] = pd.to_numeric(df['location_1'].apply(lambda x:x['latitude']))
+    #df['lon'] = pd.to_numeric(df['location_1'].apply(lambda x:x['longitude']))
+    df['lat'] = pd.to_numeric(df['lat'])
+    df['lon'] = pd.to_numeric(df['lon'])
     df[['lat','lon']] = df[['lat','lon']].replace(to_replace =[0], value = np.nan)
     df.dropna(subset=['lat','lon'],inplace=True)
     df_map = df[(df['arst_date'] <= enddate)&(df['arst_date'] >= startdate)&(df['crime_type']==crimetype)]

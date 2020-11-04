@@ -6,6 +6,8 @@ import pymongo
 import expiringdict
 import utils
 
+# !pip install expiringdict
+
 client = pymongo.MongoClient()
 logger = logging.Logger(__name__)
 utils.setup_logger(logger, 'db.log')
@@ -67,5 +69,8 @@ def fetch_all_crime_as_df(allow_cached=False):
     return ret
 
 
+
 if __name__ == '__main__':
     print(fetch_all_crime_as_df())
+
+
